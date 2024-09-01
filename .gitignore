@@ -1,0 +1,11 @@
+# Next
+.next
+
+# Dependencies
+node_modules
+
+# Not Tracking
+not_tracking
+
+# Environment Variables
+.env
