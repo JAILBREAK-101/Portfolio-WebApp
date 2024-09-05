@@ -26,6 +26,6 @@ const getGitHubActivity = async () => {
 }
 
 export async function getServerSideProps() {
-  const activities = await getGitHubActivity();
+  const activities = await getGitHubActivity(); 
   return { props: { activities } };
 }

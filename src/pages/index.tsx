@@ -19,9 +19,9 @@ export default function Home() {
     <Layout>
       <div className={styles.landing}>
         <h1 className={styles.title}>GenixTech Solutions</h1>
-        <p className={styles.subheading}>I am Oluwagbemiga, a curious Software Engineer and Graphic Designer.</p>
+        <p className={styles.subheading}>I am Oluwagbemiga. Software Engineer || Graphic Designer.</p>
 
-        <blockquote>Curiousity fuels me to do me.</blockquote>
+        <blockquote>"Curiousity fuels me to do more."</blockquote>
         <div className={styles.socialLinks}>
           <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
