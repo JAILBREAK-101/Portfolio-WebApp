@@ -4,5 +4,9 @@
 # Dependencies
 node_modules
 
+# Tasks and Non-Tracked files
+tasks
+not-tracking
+
 # Environment Variables
 .env

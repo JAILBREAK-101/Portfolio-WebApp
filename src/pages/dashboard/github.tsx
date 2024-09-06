@@ -1,10 +1,10 @@
 // (GitHub activities page)
-import Layout from '../components/Layout';
+import Dashboard from '.';
 // import { getGitHubActivity } from '../lib/github';
 
 export default function GitHub({ activities }) {
   return (
-    <Layout>
+    <Dashboard>
       <h1>My GitHub Activity</h1>
       <ul className=''>
         {activities.map((activity, index) => (
@@ -13,7 +13,7 @@ export default function GitHub({ activities }) {
           </li>
         ))}
       </ul>
-    </Layout>
+    </Dashboard>
   );
 }
 

@@ -1,9 +1,10 @@
 // (Resume details page)
-import Layout from '../components/Layout';
+
+import Dashboard from ".";
 
 export default function Resume() {
   return (
-    <Layout>
+    <Dashboard>
       <h1>My Resume</h1>
       <p>Download my resume <a href="/path/to/resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
       <section>
@@ -15,6 +16,6 @@ export default function Resume() {
           </li>
         </ul>
       </section>
-    </Layout>
+    </Dashboard>
   );
 }

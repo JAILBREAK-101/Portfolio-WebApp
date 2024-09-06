@@ -4,6 +4,8 @@
   
   .content {
     flex: 1;
+    max-height: 700px;
+    overflow-y: scroll;
     padding: 20px;
   }
   

@@ -1,0 +1,25 @@
+/* ProjectDetail.module.css */
+.projectDetail {
+    padding: 20px;
+  }
+  
+  .techStack {
+    margin-top: 20px;
+  }
+  
+  .techStack ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .links a {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  

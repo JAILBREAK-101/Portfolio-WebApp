@@ -6,6 +6,8 @@ export default function Resume() {
     <Layout>
       <h1>Contact me</h1>
       <small>Let's work together</small>
+
+      {/* <Form props/> */}
     </Layout>
   );
 }
