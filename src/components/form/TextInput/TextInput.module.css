@@ -1,0 +1,57 @@
+/* Base styles for the container */
+.container {
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for the label */
+  .label {
+    display: block;
+    font-size: 1.25rem; /* text-3xl equivalent */
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+  }
+  
+  /* Base styles for the input field */
+  .input {
+    width: 100%;
+    border: 1px solid var(--border-gray, #d1d5db);
+    border-radius: 0.375rem; /* rounded-md */
+    padding: 0.5rem; /* Default padding */
+    font-size: 1rem; /* text-base */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Different size classes */
+  .large {
+    padding: 1rem; /* p-4 equivalent */
+    font-size: 1.25rem; /* text-1xl equivalent */
+  }
+  
+  .small {
+    padding: 0.25rem; /* p-2 equivalent */
+    font-size: 0.875rem; /* text-sm equivalent */
+  }
+  
+  .defaultSize {
+    padding: 0.75rem; /* p-3 equivalent */
+    font-size: 1rem; /* text-base equivalent */
+  }
+  
+  /* Disabled state */
+  .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Error state */
+  .error {
+    border-color: var(--red, #f87171);
+  }
+  
+  .errorMessage {
+    margin-top: 0.5rem;
+    color: var(--red, #f87171);
+    font-size: 0.875rem; /* text-sm equivalent */
+  }
+  

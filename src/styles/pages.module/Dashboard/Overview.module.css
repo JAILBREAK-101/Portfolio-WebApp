@@ -1,0 +1,148 @@
+/* Overview.module.css */
+
+.overview {
+  padding: 40px;
+  color: #333;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Welcome Section */
+.welcome {
+  margin-bottom: 30px;
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+}
+
+.skills {
+  padding: 20px;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skillBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.skillBadge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+/* Highlighted Projects Section */
+.projectsOverview {
+  margin-bottom: 40px;
+}
+
+.projectsGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  text-align: left;
+}
+
+.projectCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Certifications Section */
+.certifications {
+  margin-bottom: 40px;
+}
+
+.certificationList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.certificationCard {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.certificationIcon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Social Links Section */
+.socialLinks {
+  margin-top: 40px;
+}
+
+.socialLinksGrid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialIcon {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .overview {
+      padding: 10px; /* Reduce padding */
+  }
+
+  .welcome h1 {
+      font-size: 1.5rem; /* Smaller font size for headings */
+  }
+
+  .projectsGrid {
+      grid-template-columns: 1fr; /* Stack projects vertically on mobile */
+  }
+
+  .certificationList {
+      flex-direction: column; /* Stack certifications vertically */
+  }
+
+  .socialLinksGrid {
+      flex-direction: column; /* Stack social links vertically */
+  }
+
+  .socialLinksGrid a {
+      justify-content: center; /* Center align links */
+      font-size: 0.9rem; /* Adjust font size */
+  }
+}

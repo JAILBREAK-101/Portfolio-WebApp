@@ -1,0 +1,30 @@
+.projectsHeader {
+  color: white;
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .projects {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+  }
+}
+
+.techStack {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* Adjust spacing as needed */
+}
+
+.techIcon {
+  width: 24px; /* Set size as needed */
+  height: 24px; /* Set size as needed */
+  margin: 0 5px; /* Space between icons */
+}

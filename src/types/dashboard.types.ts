@@ -1,4 +1,5 @@
 export type TProject = {
+    detailsLink: string;
     id: string | number;
     name: string;
     description: string;
@@ -6,6 +7,10 @@ export type TProject = {
     githublink: string;
     livelink: string;
     image: string;
+    problemStatement: string;
+    screenshots: string[];
+    gitHubHistory: string[];
+    phase: string;
 }
 
 export type TServices = {

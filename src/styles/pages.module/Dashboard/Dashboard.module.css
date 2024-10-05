@@ -1,0 +1,14 @@
+.dashboard {
+  height: 100vh;
+  display: flex;
+}
+  
+  .content {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .content h1 {
+    margin-bottom: 20px;
+  }

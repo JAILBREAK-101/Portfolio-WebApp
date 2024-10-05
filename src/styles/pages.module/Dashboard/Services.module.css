@@ -1,0 +1,89 @@
+.servicesContainer {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    text-align: center;
+  }
+  
+  .pageTitle {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: var(--indigo);
+    position: relative;
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  /* Service Cards Grid */
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Service Card */
+  .serviceCard {
+    background-color: var(--dark);
+    border: 2px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Hover Effect */
+  .serviceCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .serviceCard::before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0,112,243,0.3), transparent);
+    transition: transform 0.4s ease;
+    transform: scale(0);
+  }
+  
+  .serviceCard:hover::before {
+    transform: scale(1);
+  }
+  
+  .serviceTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--white);
+    transition: color 0.3s ease;
+  }
+  
+  .serviceCard:hover .serviceTitle {
+    color: var(--white);
+  }
+  
+  .serviceDescription {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--white);
+  }
+  
+  /* Keyframe Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

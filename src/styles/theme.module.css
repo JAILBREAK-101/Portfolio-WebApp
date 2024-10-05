@@ -1,0 +1,30 @@
+:root {
+    --color-primary: #0070f3; /* Primary Blue */
+    --color-secondary: #1e1e1e; /* Dark Gray */
+    --color-accent: #ff4081; /* Accent Pink */
+    --color-background: #f5f7fa; /* Light Background */
+    --color-text: #333; /* Default Text Color */
+    --color-heading: #1a1a1a; /* Heading Text Color */
+    --color-border: #e5e5e5; /* Border Color */
+  
+    /* light and dark variants */
+    --color-primary-light: #3291ff;
+    --color-secondary-light: #5a5a5a;
+    --color-accent-light: #ff70a3;
+  
+    /* success, warning, error, and info colors */
+    --color-success: #4caf50; /* Green */
+    --color-warning: #ffc107; /* Yellow */
+    --color-error: #f44336; /* Red */
+    --color-info: #2196f3; /* Blue */
+  }
+  
+  /* dark theme */
+  .dark-theme {
+    --color-background: #121212;
+    --color-text: #e0e0e0;
+    --color-border: #333;
+    --color-primary: #bb86fc; /* Dark Theme Primary */
+    --color-secondary: #03dac6; /* Dark Theme Secondary */
+  }
+  

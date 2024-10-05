@@ -1,0 +1,86 @@
+.sidebar {
+  width: 200px;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: width 0.3s ease; /* Transition for width change */
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 80px; /* Collapsed width */
+  }
+
+  .sidebar ul {
+      height: auto; /* Remove fixed height */
+  }
+
+  .sidebar ul li {
+      padding: 1rem; /* Reduce padding for mobile */
+      justify-content: center; /* Center icons */
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .sidebar ul li .label {
+      display: none; /* Hide labels */
+  }
+
+  .sidebar ul li:hover .label {
+      display: block; /* Show labels on hover */
+      position: absolute; /* Position label absolutely */
+      left: 70px; /* Adjust based on your layout */
+      background-color: #fff; /* Optional: background for labels */
+      padding: 0.5rem;
+      border-radius: 5px; /* Optional: rounded corners */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow for labels */
+  }
+
+  .sidebar:hover {
+      width: 120px;
+  }
+}
+
+/* General styles */
+.sidebar ul {
+  overflow-y: scroll;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 70%;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.sidebar ul li a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: bold;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 0.5rem; */
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li:hover .icon {
+  color: #0070f3;
+}

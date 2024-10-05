@@ -1,18 +1,10 @@
-// (Dashboard page listing projects)
-import Navbar from '../../components/Navbar';
-import Sidebar from '../../components/Sidebar';
-import styles from "../../styles/Dashboard.module.css";
+import Dashboard from '../../components/layout/Dashboard';
+import Overview from '../../components/Overview';
 
-export default function Dashboard({children}) {
+export default function DashboardIndex() {
   return (
-    <>
-      <Navbar />
-      <div className={styles.dashboard}>
-        <Sidebar />
-        <div className={styles.content}>
-          {children}
-        </div>
-      </div>
-    </>
+    <Dashboard>
+      <Overview />
+    </Dashboard>
   );
 }
