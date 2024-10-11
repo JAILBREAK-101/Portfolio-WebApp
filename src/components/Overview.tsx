@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from "../styles/pages.module/Dashboard/Overview.module.css";
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaLink, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdSchool } from 'react-icons/md';
 import SkillsOverview from './SkillOverview';
+import { Button } from './form/Button/Button';
 
 export default function Overview() {
   return (
@@ -18,6 +19,8 @@ export default function Overview() {
       <SkillsOverview />
 
       {/* Highlighted Projects */}
+
+      {/* Dynamically Pull Projects from GitHub Pins */}
       <div className={styles.projectsOverview}>
         <h2>Highlighted Projects</h2>
         <div className={styles.projectsGrid}>
@@ -25,11 +28,35 @@ export default function Overview() {
             <h3>Portfolio Website</h3>
             <p>A personal website showcasing my work, blog, and resume.</p>
             <span>Tech Stack: React, Next.js, TailwindCSS</span>
+            <div style={{display: 'flex', gap: '1rem', marginTop: "10px"}}>
+              <Button 
+                body={<a href=''>
+                  <FaLink />
+                </a>}
+              />
+              <Button 
+                body={<a href=''>
+                  <FaGithub color='black'/>
+                </a>}
+              />
+            </div>
           </div>
           <div className={styles.projectCard}>
-            <h3>Video Caption Generator</h3>
+            <h3>Subtilo</h3>
             <p>Tool for generating and customizing subtitles for videos.</p>
-            <span>Tech Stack: Python, Flask, ffmpeg</span>
+            <span>Tech Stack: React, Flask, PostgreSQL, GCPAI</span>
+            <div style={{display: 'flex', gap: '1rem', marginTop: "10px"}}>
+              <Button 
+                body={<a href=''>
+                  <FaLink />
+                </a>}
+              />
+              <Button 
+                body={<a href=''>
+                  <FaGithub color='black'/>
+                </a>}
+              />
+            </div>
           </div>
           {/* Add more project cards as needed */}
         </div>
@@ -58,7 +85,7 @@ export default function Overview() {
           <a href="https://github.com/JAILBREAK-101" target="_blank" rel="noopener noreferrer">
             <FaGithub className={styles.socialIcon} /> GitHub
           </a>
-          <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/oluwagbemigaawosope" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className={styles.socialIcon} /> LinkedIn
           </a>
           <a href="https://twitter.com/GenixTech1" target="_blank" rel="noopener noreferrer">
