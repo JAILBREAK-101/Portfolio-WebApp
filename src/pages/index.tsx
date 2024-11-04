@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Gbemiga from "@/assets/images/Gbemiga.jpg";
 import Layout from '../components/layout/Layout';
 import styles from '../styles/pages.module/Home/Home.module.css';
 import Link from 'next/link';
@@ -28,7 +29,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <Image
-            src="/images/Gbemiga.jpg"
+            src={Gbemiga}
             alt="Profile Picture"
             width={200}
             height={200}
@@ -44,7 +45,7 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <a href="https://github.com/JAILBREAK-101" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://linkedin.com/in/jailbreak" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="https://twitter.com/GenixTech1" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
           <a href="https://youtube.com/@Genix-Js" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
         </motion.div>
@@ -56,7 +57,7 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 1 }}
         >
           <Link href="/dashboard">
-            <Button btnClass={`${styles.exploreButton}`} body={'Explore'} />
+            <Button btnClass={`${styles.exploreButton}`} body={'See my work'} />
           </Link>
         </motion.div>
       </div>

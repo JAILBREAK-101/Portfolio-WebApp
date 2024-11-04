@@ -1,125 +1,40 @@
-# My Portfolio WebApp
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-This is a full-stack portfolio web application built with Next.js, Prisma, and PostgreSQL. The application showcases personal projects, YouTube content, blog posts, services offered, GitHub activities, and a detailed resume.
+## Getting Started
 
-## Table of Contents
-- [Demo](#demo)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Environment Variables](#environment-variables)
-- [Deployment](#deployment)
-- [License](#license)
+First, run the development server:
 
-## Demo
-A live demo of the application is available at: [https://your-portfolio.vercel.app](https://your-portfolio.vercel.app)
-
-## Features
-- **Dashboard**: Lists personal projects with descriptions and links.
-- **YouTube**: Embedded YouTube channel for showcasing video content.
-<!-- - **Blog**: A blog section to share articles and insights. -->
-- **Services**: Details the services you offer.
-- **GitHub Activities**: Displays recent GitHub activities using the GitHub API.
-- **Resume**: Showcases experience, education, and certifications.
-
-## Tech Stack
-- **Frontend/Backend**: [Next.js](https://nextjs.org)
-- **Database**: [Prisma](https://www.prisma.io) with [PostgreSQL](https://www.postgresql.org)
-- **Deployment**: [Vercel](https://vercel.com)
-
-## Installation
-
-### Prerequisites
-- Node.js >= 14.x
-- PostgreSQL >= 12.x
-- Git
-
-### Clone the repository
-```bash
-git clone https://github.com/yourusername/your-portfolio.git
-cd your-portfolio
-```
-
-### Install dependencies
-```bash
-npm install
-```
-
-### Set up the database
-1. Create a PostgreSQL database.
-2. Configure the database URL in the `.env` file.
-
-### Migrate the database
-```bash
-npx prisma migrate dev --name init
-```
-
-### Generate Prisma client
-```bash
-npx prisma generate
-```
-
-## Usage
-
-### Run the development server
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the app in action.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Environment Variables
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-Create a `.env` file in the root of your project and add the following variables:
+[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-```env
-DATABASE_URL="postgresql://user:password@localhost:5432/mydb"
-NEXTAUTH_SECRET="your-nextauth-secret"
-NEXTAUTH_URL="http://localhost:3000"
-GITHUB_API_URL="https://api.github.com/users/your_github_username/events"
-```
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
 
-- `DATABASE_URL`: The connection string for your PostgreSQL database.
-- `NEXTAUTH_SECRET`: A secret key used by NextAuth.js for signing tokens.
-- `NEXTAUTH_URL`: The base URL of your application, typically `http://localhost:3000` in development.
-- `GITHUB_API_URL`: The GitHub API URL to fetch your GitHub activities.
+This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Deployment
+## Learn More
 
-### Deploying to Vercel
-1. Install the Vercel CLI:
-   ```bash
-   npm install -g vercel
-   ```
+To learn more about Next.js, take a look at the following resources:
 
-2. Run the deployment command:
-   ```bash
-   vercel
-   ```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
-3. Follow the prompts to complete the deployment. The application will be live at your Vercel domain.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-### Additional Deployment Steps
-- Set up environment variables on Vercel.
-- Ensure the PostgreSQL database is accessible from the Vercel deployment.
+## Deploy on Vercel
 
-## License
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Made with ❤️ by [Your Name](https://yourwebsite.com).
-```
-
-### **Customizing the README**
-- **Project URL:** Replace the demo URL with the actual link to your deployed site.
-- **GitHub Repo:** Replace `https://github.com/yourusername/your-portfolio.git` with the actual URL of your GitHub repository.
-- **Your Information:** Update the license section and add your name and personal website.
-
-
-<!-- Ask ChatGPT for this information -->
-**a.** Need help setting up environment variables on Vercel for deployment?
-
-**b.** Want to include instructions for contributors in the README?
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.

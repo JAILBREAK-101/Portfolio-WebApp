@@ -1,10 +1,29 @@
 "use client";
+
+import { useState, } from "react";
+import { useRouter } from "next/router";
+import { Card } from "../ui/Card";
+import styles from "../../styles/pages.module/Dashboard/Projects.module.css";
+import customFetch from "../../lib/utils/api";
+import { TProject } from "../../types/dashboard.types";
+import ReactJs from "@/assets/icons/react.svg";
+import Redux from "@/assets/icons/redux.svg";
+import TailwindCSS from "@/assets/icons/tailwind-css.svg";
+import NodeJs from "@/assets/icons/nodejs.svg";
+import Flask from "@/assets/icons/flask.svg";
+import PostgreSQL from "@/assets/icons/postgresql.svg";
+import MongoDB from "@/assets/icons/mongodb.svg";
+import Firebase from "@/assets/icons/firebase.svg";
+import GoogleCloudServices from "@/assets/icons/google-cloud.svg";
+import Heroku from "@/assets/icons/heroku.svg";
+import ExpressJs from "@/assets/icons/express-js.svg";
+
 // project data
 export const projectData: TProject[] = [
   {
     id: "1",
     name: "Subtilo",
-    description: "Subtitle Generation Application",
+    description: "Subtitle eeneration Application",
     image: "",
     githublink: "",
     livelink: "",
@@ -73,26 +92,19 @@ export const projectData: TProject[] = [
   }
 ];
 
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import { Card } from "../ui/Card";
-import styles from "../../styles/pages.module/Dashboard/Projects.module.css";
-import customFetch from "../../lib/utils/api";
-import { TProject } from "../../types/dashboard.types";
-
 // Define the tech icons map
 const techIcons = {
-  "React.Js": "/icons/react.svg",
-  "Redux": "/icons/redux.svg",
-  "Tailwind CSS": "/icons/tailwindcss.svg",
-  "Node.Js": "/icons/nodejs.svg",
-  "Flask": "/icons/flask.svg",
-  "PostgreSQL": "/icons/postgresql.svg",
-  "MongoDB": "/icons/mongodb.svg",
-  "Firebase": "/icons/firebase.svg",
-  "Google Cloud Services": "/icons/google-cloud.svg",
-  "Heroku": "/icons/heroku.svg",
-  "Express.Js": "/icons/express.svg",
+  "React.Js": ReactJs,
+  "Redux": Redux,
+  "Tailwind CSS": TailwindCSS,
+  "Node.Js": NodeJs,
+  "Flask": Flask,
+  "PostgreSQL": PostgreSQL,
+  "MongoDB": MongoDB,
+  "Firebase": Firebase,
+  "Google Cloud Services": GoogleCloudServices,
+  "Heroku": Heroku,
+  "Express.Js": ExpressJs,
 };
 
 // Define the shape of the API response using an interface
