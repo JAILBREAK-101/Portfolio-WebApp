@@ -9,10 +9,10 @@ export default function SkillsOverview() {
     <div className={styles.skills}>
       <h2>Tech Stack</h2>
       <div className={styles.skillsList}>
-        <div className={styles.skillBadge}>
+        {/* <div className={styles.skillBadge}>
           <FaAngular color="#DD0031" size={40} />
           <span className={styles.label}>Angular</span>
-        </div>
+        </div> */}
         <div className={styles.skillBadge}>
           <FaReact color="#61DBFB" size={40} />
           <span className={styles.label}>React</span>

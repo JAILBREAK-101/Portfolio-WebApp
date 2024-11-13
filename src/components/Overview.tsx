@@ -22,15 +22,15 @@ export default function Overview() {
 
       {/* Dynamically Pull Projects from GitHub Pins */}
       <div className={styles.projectsOverview}>
-        <h2>Highlighted Projects</h2>
+        <h2>Recent Projects</h2>
         <div className={styles.projectsGrid}>
           <div className={styles.projectCard}>
-            <h3>Portfolio Website</h3>
-            <p>A personal website showcasing my work, blog, and resume.</p>
-            <span>Tech Stack: React, Next.js, TailwindCSS</span>
+            <h3>SISTN Website</h3>
+            <p>Website for a nongovernmental organisation registered in Nigeria by the Corporate Affairs Commission (CAC) with a broad mandate to cater for the professional interests of information professionals and allied disciplines in Nigeria.</p>
+            <span><b>Tech Stack:</b> React, Next.js, TailwindCSS, PHP, MySQL, Hostinger</span>
             <div style={{display: 'flex', gap: '1rem', marginTop: "10px"}}>
               <Button 
-                body={<a href=''>
+                body={<a href='https://www.sistn.org'>
                   <FaLink />
                 </a>}
               />
@@ -42,9 +42,9 @@ export default function Overview() {
             </div>
           </div>
           <div className={styles.projectCard}>
-            <h3>Subtilo</h3>
-            <p>Tool for generating and customizing subtitles for videos.</p>
-            <span>Tech Stack: React, Flask, PostgreSQL, GCPAI</span>
+            <h3>Subtilo: <small><i>In Development</i></small></h3>
+            <p>An AI-Powered application that creates accurate, multi-language subtitles online or offline in seconds, no extra tools needed.</p>
+            <span><b>Tech Stack:</b> React, TailwindCSS, Flask, Firebase Authentication, PostgreSQL, Google Cloud Platform</span>
             <div style={{display: 'flex', gap: '1rem', marginTop: "10px"}}>
               <Button 
                 body={<a href=''>
@@ -63,7 +63,7 @@ export default function Overview() {
       </div>
 
       {/* Certifications */}
-      <div className={styles.certifications}>
+      {/* <div className={styles.certifications}>
         <h2>Certifications</h2>
         <div className={styles.certificationList}>
           <div className={styles.certificationCard}>
@@ -75,8 +75,8 @@ export default function Overview() {
             <p>Python Programming - ABC Institute</p>
           </div>
           {/* Add more certifications as needed */}
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
 
       {/* Social Links */}
       <div className={styles.socialLinks}>

@@ -1,4 +1,3 @@
-// (Resume details page)
 import Layout from '../components/layout/Layout';
 
 export default function Resume() {

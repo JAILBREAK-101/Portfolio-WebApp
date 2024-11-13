@@ -41,52 +41,18 @@
 }
 
 .socialLinks {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the icons */
   display: flex;
-  flex-wrap: wrap; /* Allows for better wrapping of icons */
-  width: 200px; /* Allows for positioning */
-  height: 200px; /* Aligns with the profile picture */
-  animation: rotate 10s linear infinite; /* Rotate the container */
 }
 
 .socialLinks a {
-  position: absolute;
-  width: 40px; /* Width of the icon */
-  height: 40px; /* Height of the icon */
+  width: 100px; /* Width of the icon */
+  height: 100px; /* Height of the icon */
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--primary-color);
   font-size: 1.8rem;
   transition: transform 0.3s ease-in-out;
-}
-
-/* Positioning the icons around the profile picture */
-.socialLinks a:nth-child(1) { 
-  top: 0%; 
-  left: 50%; 
-  transform: translate(-50%, -50%) rotate(0deg) translateY(-80px); /* Adjust distance */
-}
-
-.socialLinks a:nth-child(2) { 
-  top: 50%;  
-  right: 0%; 
-  transform: translate(50%, -50%) rotate(90deg) translateX(80px); /* Adjust distance */
-}
-
-.socialLinks a:nth-child(3) { 
-  bottom: 0%; 
-  left: 50%; 
-  transform: translate(-50%, 50%) rotate(180deg) translateY(80px); /* Adjust distance */
-}
-
-.socialLinks a:nth-child(4) { 
-  top: 50%; 
-  left: 0%; 
-  transform: translate(-50%, -50%) rotate(270deg) translateX(-80px); /* Adjust distance */
 }
 
 .exploreButton {
