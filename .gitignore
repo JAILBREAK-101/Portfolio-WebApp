@@ -12,7 +12,7 @@
 
 # Tasks and Non-Tracked files
 tasks
-not-tracking
+not_tracking
 
 # testing
 /coverage
