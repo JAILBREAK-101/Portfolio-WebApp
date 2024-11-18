@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../../styles/pages.module/Dashboard/ProjectDetails.module.css";
-import { projectData } from ".";
+import { projectData } from "./old/oldindex";
 import { Button } from "../form/Button/Button";
 
 export default function ProjectDetail() {
