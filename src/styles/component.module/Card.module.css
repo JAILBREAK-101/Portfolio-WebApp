@@ -6,6 +6,7 @@
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
+  min-height: 100%;
 }
 
 .card:hover {

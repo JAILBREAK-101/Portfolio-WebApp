@@ -35,7 +35,7 @@
 .navbar_nav .navbar_link {
   color: var(--dark);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .navbar_nav .navbar_link:hover {

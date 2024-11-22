@@ -42,11 +42,13 @@
 
 .socialLinks {
   display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 .socialLinks a {
-  width: 100px; /* Width of the icon */
-  height: 100px; /* Height of the icon */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,19 +57,35 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.exploreButton {
+.buttonGroup {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.exploreButton, .secondaryButton {
   padding: 12px 24px;
-  background-color: white;
-  color: var(--dark);
   border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 
   &:hover {
-    background-color: var(--gray-dark);
+    background-color: grey;
+    color: white;
     transform: translateY(-5px);
   }
+}
+
+.exploreButton {
+  background-color: white;
+  color: var(--gray-dark);
+}
+
+.secondaryButton {
+  background-color: var(--gray-dark);
+  color: white;
 }
 
 /* Keyframes for the rotation effect */
