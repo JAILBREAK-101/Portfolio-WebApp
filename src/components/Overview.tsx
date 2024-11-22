@@ -11,8 +11,8 @@ export default function Overview() {
       
       {/* Welcome and Introduction */}
       <div className={styles.welcome}>
-        <h1>Welcome to My Portfolio</h1>
-        <p>I am a full-stack developer specializing in building responsive web applications with modern frameworks.</p>
+        <h1>GenixTech Solutions</h1>
+        <p>Software Engineer specializing in building responsive web applications using modern frameworks.</p>
       </div>
 
       {/* Skills & Technologies */}
