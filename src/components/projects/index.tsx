@@ -4,14 +4,18 @@ import { TProject } from "@/types/dashboard.types";
 import { SiFirebase, SiFlask, SiGooglecloud, SiHeroku, SiTailwindcss } from "react-icons/si";
 import { DiPostgresql, DiMongodb, DiExtjs } from "react-icons/di";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-
+import { Button } from "../form/Button/Button";
+import Link from "next/link";
 
 const categories = {
     "Design Works": ["Illustrations", "Logo Designs", "Flyer Designs", "UI Mockups", "Figma Templates"],
-    "Mobile Apps": ["ChatUp"],
-    "Web Apps": ["ThoughtSphere", "Subtilo"],
+    // "Mobile Apps": ["ChatUp"],
+    "Web Apps": [
+      // "ThoughtSphere", 
+      "Subtilo"
+    ],
     "Websites": ["Queenz Treats n Events", "SISTN"],
-    "Custom Software": [],
+    // "Custom Software": [],
 };
 
 // project data
@@ -19,7 +23,7 @@ export const projectData: TProject[] = [
     {
       id: "1",
       name: "Subtilo",
-      description: "Subtitle eeneration Application",
+      description: "Subtitle Generation Application",
       image: "",
       githublink: "",
       livelink: "",
@@ -28,7 +32,8 @@ export const projectData: TProject[] = [
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
       screenshots: [],
       gitHubHistory: [],
-      phase: "Development"
+      phase: "Development",
+      projectType: "web-app"
     },
     {
       id: "2",
@@ -42,7 +47,8 @@ export const projectData: TProject[] = [
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
       screenshots: [],
       gitHubHistory: [],
-      phase: "Completed"
+      phase: "Completed",
+      projectType: "mobile-app"
     },
     {
       id: "3",
@@ -56,7 +62,8 @@ export const projectData: TProject[] = [
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
       screenshots: [],
       gitHubHistory: [],
-      phase: "Development"
+      phase: "Development",
+      projectType: "website"
     },
     {
       id: "4",
@@ -70,7 +77,8 @@ export const projectData: TProject[] = [
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
       screenshots: [],
       gitHubHistory: [],
-      phase: "Completed"
+      phase: "Completed",
+      projectType: "web-app"
     },
     {
       id: "5",
@@ -84,7 +92,8 @@ export const projectData: TProject[] = [
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
       screenshots: [],
       gitHubHistory: [],
-      phase: "Development"
+      phase: "Development",
+      projectType: "website"
     }
   ];
 
@@ -106,12 +115,21 @@ export const projectData: TProject[] = [
   export default function Projects() {
     return (
       <div className={styles.projectsContainer}>
-        <h1 className={styles.projectsHeader}>Projects</h1>
+        <h1 className={styles.projectsHeader}>Products</h1>
         {Object.entries(categories).map(([category, projects]) => (
           <section key={category}>
             <h2 className={styles.categoryHeader}>{category}</h2>
             <ul className={styles.projects}>
               {projectData
+                // .filter((project) => {
+                //   if (project.projectType === "design") {
+                //     return (
+                //       <Button body={
+                //         <Link href={""}>Behance Projects</Link>
+                //       }></Button>
+                //     )
+                //   }
+                // })   
                 .filter((project) => projects.includes(project.name))
                 .map((project) => (
                   <li key={project.id} className={styles.card}>
@@ -119,7 +137,7 @@ export const projectData: TProject[] = [
                       image={project.image}
                       title={project.name}
                       description={project.description}
-                      link={`/dashboard/projects/${project.id}`}
+                      link={`/dashboard/projects/${project.name}`}
                       isProjectCard={true}
                       projectLinks={[
                         { url: project.livelink, label: "Live" },

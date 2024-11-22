@@ -11,6 +11,7 @@ export type TProject = {
     screenshots: string[];
     gitHubHistory: string[];
     phase: string;
+    projectType: "design" | "web-app" | "website" | "mobile-app" | "custom-software";
 }
 
 export type TServices = {
