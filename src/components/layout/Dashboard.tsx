@@ -1,8 +1,9 @@
 import Navbar from '../../components/layout/Navbar';
 import Sidebar from '../../components/layout/Sidebar';
 import styles from "../../styles/pages.module/Dashboard/Dashboard.module.css";
+import { TypeComponent } from '@/types/global.types';
 
-export default function Dashboard({children}) {
+const Dashboard: React.FC<TypeComponent> = ({ children }) => {
   return (
     <div className={styles.dashboardLayout}>
       <Navbar />
@@ -15,3 +16,5 @@ export default function Dashboard({children}) {
     </div>
   );
 }
+
+export default Dashboard;

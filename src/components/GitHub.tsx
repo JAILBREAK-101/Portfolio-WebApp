@@ -1,6 +1,14 @@
 // import { getGitHubActivity } from '../lib/github';
 
-export default function GitHub({ activities }) {
+interface GitHubProps {
+  activities: [
+    activity: {
+      description: string;
+    }
+  ];
+}
+
+export default function GitHub({ activities }: GitHubProps) {
   return (
     <>
       <h1>My GitHub Activity</h1>

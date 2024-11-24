@@ -47,14 +47,14 @@ export default function ProjectDetail() {
       <div className={styles.gitHubHistory}>
         <h3>GitHub History:</h3>
         <ul>
-          {project.gitHubHistory?.length ? (
-            project.gitHubHistory.map((entry, index) => (
-              <li key={index}>
-              <a href={entry.link} target="_blank" rel="noopener noreferrer">
-                {entry.message} - {entry.date}
+          {project.gitHubHistory?.date ? (
+            // project.((entry: any, index: number) => (
+              <li key={project.id}>
+              <a href={project.gitHubHistory.link} target="_blank" rel="noopener noreferrer">
+                {project.gitHubHistory.message} - {project.gitHubHistory.date}
               </a>
             </li>
-            ))
+            // ))
           ) : (
             <p>No GitHub history available.</p>
           )}

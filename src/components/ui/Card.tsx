@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from '../../styles/component.module/Card.module.css';
+import { IconType } from 'react-icons';
 
 interface ProjectLink {
   url: string;
@@ -15,7 +16,7 @@ interface CardProps {
   isProjectCard?: boolean; 
   projectLinks?: ProjectLink[]; 
   techstack?: string[]; 
-  techIcons?: { [key: string]: string };
+  techIcons?: { [key: string]: IconType };
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -51,14 +52,11 @@ export const Card: React.FC<CardProps> = ({
         {/* Tech Stacks*/}
         {isProjectCard && techstack.length > 0 && (
           <div className={styles.techStack}>
-            {techstack.map((tech) => (
-              // techIcons[tech]
-              <img
-                key={tech}
-                src={techIcons[tech]}
-                alt={tech}
-                className={styles.techIcon}
-              />
+           {techstack.map((tech) => (
+              <div key={tech}>
+                {/* Render the icon component directly */}
+                {techIcons[tech] && React.createElement(techIcons[tech])}
+              </div>
             ))}
           </div>
         )}

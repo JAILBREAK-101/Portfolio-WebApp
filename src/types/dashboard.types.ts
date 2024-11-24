@@ -9,9 +9,14 @@ export type TProject = {
     image: string;
     problemStatement: string;
     screenshots: string[];
-    gitHubHistory: string[];
+    gitHubHistory: {
+        link: string,
+        message: string,
+        date: string,
+    };
     phase: string;
     projectType: "design" | "web-app" | "website" | "mobile-app" | "custom-software";
+    techIcons?: {},
 }
 
 export type TServices = {

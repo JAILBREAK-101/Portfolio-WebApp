@@ -4,8 +4,6 @@ import { TProject } from "@/types/dashboard.types";
 import { SiFirebase, SiFlask, SiGooglecloud, SiHeroku, SiTailwindcss } from "react-icons/si";
 import { DiPostgresql, DiMongodb, DiExtjs } from "react-icons/di";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { Button } from "../form/Button/Button";
-import Link from "next/link";
 
 const categories = {
     "Design Works": ["Illustrations", "Logo Designs", "Flyer Designs", "UI Mockups", "Figma Templates"],
@@ -31,9 +29,11 @@ export const projectData: TProject[] = [
       detailsLink: "Learn More",
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
       screenshots: [],
-      gitHubHistory: [],
+      gitHubHistory: {
+        link: "https://github.com/example", message: "Initial commit", date: "2024-11-24" ,
+      },
       phase: "Development",
-      projectType: "web-app"
+      projectType: "web-app",
     },
     {
       id: "2",
@@ -46,9 +46,11 @@ export const projectData: TProject[] = [
       detailsLink: "Learn More",
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
       screenshots: [],
-      gitHubHistory: [],
+      gitHubHistory: {
+        link: "https://github.com/example", message: "Initial commit", date: "2024-11-24" ,
+      },
       phase: "Completed",
-      projectType: "mobile-app"
+      projectType: "mobile-app",
     },
     {
       id: "3",
@@ -61,9 +63,11 @@ export const projectData: TProject[] = [
       detailsLink: "Learn More",
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
       screenshots: [],
-      gitHubHistory: [],
+      gitHubHistory: {
+        link: "https://github.com/example", message: "Initial commit", date: "2024-11-24" ,
+      },
       phase: "Development",
-      projectType: "website"
+      projectType: "website",
     },
     {
       id: "4",
@@ -76,9 +80,11 @@ export const projectData: TProject[] = [
       detailsLink: "Learn More",
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
       screenshots: [],
-      gitHubHistory: [],
+      gitHubHistory: {
+        link: "https://github.com/example", message: "Initial commit", date: "2024-11-24" ,
+      },
       phase: "Completed",
-      projectType: "web-app"
+      projectType: "web-app",
     },
     {
       id: "5",
@@ -91,9 +97,11 @@ export const projectData: TProject[] = [
       detailsLink: "Learn More",
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
       screenshots: [],
-      gitHubHistory: [],
+      gitHubHistory: {
+        link: "https://github.com/example", message: "Initial commit", date: "2024-11-24" ,
+      },
       phase: "Development",
-      projectType: "website"
+      projectType: "website",
     }
   ];
 
