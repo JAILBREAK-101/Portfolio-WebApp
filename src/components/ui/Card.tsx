@@ -53,7 +53,7 @@ export const Card: React.FC<CardProps> = ({
         {isProjectCard && techstack.length > 0 && (
           <div className={styles.techStack}>
            {techstack.map((tech) => (
-              <div key={tech}>
+              <div key={tech} className={styles.tech}>
                 {/* Render the icon component directly */}
                 {techIcons[tech] && React.createElement(techIcons[tech])}
               </div>

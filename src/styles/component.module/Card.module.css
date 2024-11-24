@@ -7,6 +7,7 @@
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
   min-height: 100%;
+  padding: 12px;
 }
 
 .card:hover {
@@ -71,4 +72,14 @@
   color: white;
   margin: 0 5px;
   text-decoration: underline;
+}
+
+.techStack {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.tech > * {
+  font-size: 32px;
 }
