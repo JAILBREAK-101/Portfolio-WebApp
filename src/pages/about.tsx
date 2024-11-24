@@ -1,62 +1,135 @@
 import React from 'react';
 import styles from "../styles/pages.module/Home/About.module.css";
 import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
-import { MdSchool } from 'react-icons/md';
-import { Button } from '@/components/form/Button/Button';
 import Layout from '@/components/layout/Layout';
 
 export default function AboutMe() {
   return (
     <Layout>
-        <div className={styles.aboutMe}>
-        
-        {/* Welcome Section */}
-        <div className={styles.welcome}>
-            <h1>About Me</h1>
-            <p>Hello! I'm Oluwagbemiga, a passionate Full-Stack Developer, dedicated to building impactful and innovative web applications. I specialize in front-end technologies like React, Angular, and Next.js, and have experience working with back-end technologies like Flask, PostgreSQL, and Firebase.</p>
-        </div>
-    
-        {/* My Journey in Tech */}
-        <div className={styles.journey}>
-            <h2>My Journey in Tech</h2>
-            <p>My journey in tech began out of curiosity, quickly evolving into a deep passion. After learning the basics of HTML, CSS, and JavaScript, I dove into the world of React, Next.js, and other modern frameworks. The problem-solving aspect of coding intrigued me, and I soon realized that I wanted to not only create apps but build solutions that make people's lives easier.</p>
-            <p>Throughout my journey, I have worked on several exciting projects such as building web applications, learning about AI/ML development, and working with various databases and cloud technologies. I take pride in my ability to adapt and learn new skills as needed, whether it's mastering a new language or diving into a new tool. </p>
-        </div>
-    
-        {/* Passions & Interests */}
-        <div className={styles.passions}>
-            <h2>Passions & Interests</h2>
-            <p>Beyond coding, I am passionate about AI and machine learning, especially how they intersect with web development. I believe that the future of tech lies in creating intelligent, intuitive systems that can automate tasks and solve real-world problems in innovative ways.</p>
-            <p>I’m also deeply interested in graphic design and have been honing my skills using tools like Photoshop and Illustrator. The creative aspect of design allows me to express my ideas in a visually compelling way, which complements my technical skills in building beautiful user interfaces.</p>
-            <p>Additionally, I enjoy sharing my knowledge with others, which is why I created a YouTube channel where I teach web development topics. Helping others learn and grow in tech brings me immense satisfaction.</p>
-        </div>
-    
-        {/* Long-term Goals */}
-        <div className={styles.goals}>
-            <h2>My Long-Term Goals</h2>
-            <p>In the long run, I aim to become an AI/ML Software Engineer, combining my passion for software development with the limitless possibilities of artificial intelligence. I plan to continue learning, experimenting with cutting-edge technologies, and working on innovative projects that can contribute to society. I also aspire to become a mentor and leader, helping others on their journey in tech and inspiring the next generation of developers.</p>
-            <p>My current projects, such as Subtilo, an AI-powered subtitle generator, are just the beginning of what I hope to accomplish. I’m also eager to continue contributing to open-source projects, collaborating with other developers, and sharing my knowledge with the community. The journey is long, but I’m excited for what the future holds.</p>
-        </div>
-    
-        {/* Social Links */}
-        <div className={styles.socialLinks}>
-            <h2>Connect with Me</h2>
-            <div className={styles.socialLinksGrid}>
+      <div className={styles.aboutMe}>
+
+        {/* Hero Section */}
+        <section className={styles.hero}>
+          <div className={styles.heroContent}>
+            <h1 className={styles.heading}>About Me</h1>
+            <p>
+              I’m Oluwagbemiga, a Full-Stack Developer passionate about technology, learning, and creating innovative solutions. 
+              Join me on a visual journey through my career and aspirations.
+            </p>
+          </div>
+          <div className={styles.heroImage}>
+            <img 
+              src="https://via.placeholder.com/800x400" 
+              alt="Hero placeholder - coding journey" 
+              className={styles.placeholderImage} 
+            />
+          </div>
+        </section>
+
+        {/* Journey Section */}
+        <section className={styles.section}>
+          <h2 className={styles.heading}>My Journey</h2>
+          <div className={styles.contentGrid}>
+            <div>
+              <p>
+                My tech journey started with curiosity and grew into a full-fledged passion. From learning the basics of HTML and CSS 
+                to mastering modern frameworks like React and Next.js, I’ve constantly pushed myself to improve.
+              </p>
+              <p>
+                Along the way, I discovered the power of problem-solving through code and the satisfaction of creating 
+                applications that simplify tasks and bring ideas to life.
+              </p>
+            </div>
+            <img 
+              src="https://via.placeholder.com/400x300" 
+              alt="Learning to code placeholder" 
+              className={styles.placeholderImage} 
+            />
+          </div>
+        </section>
+
+        {/* Events Section */}
+        <section className={styles.section}>
+          <h2 className={styles.heading}>Tech Events and Community</h2>
+          <div className={styles.contentGrid}>
+            <img 
+              src="https://via.placeholder.com/400x300" 
+              alt="Attending tech events placeholder" 
+              className={styles.placeholderImage} 
+            />
+            <div>
+              <p>
+                One of the highlights of my journey has been attending tech meetups, hackathons, and community events. 
+                These experiences have connected me with brilliant minds, challenged my skills, and expanded my understanding 
+                of cutting-edge technologies.
+              </p>
+              <p>
+                I’ve also participated in webinars and workshops, sharing my knowledge while learning from others in the community.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Internship and Work Experience Section */}
+        <section className={styles.section}>
+          <h2 className={styles.heading}>Internship & Work Experience</h2>
+          <div className={styles.contentGrid}>
+            <div>
+              <p>
+                My internships provided invaluable hands-on experience, allowing me to apply theoretical knowledge to real-world projects. 
+                From collaborating with teams to building robust applications, I honed my technical and interpersonal skills.
+              </p>
+              <p>
+                These experiences shaped my professional ethos: a commitment to quality, collaboration, and continuous learning.
+              </p>
+            </div>
+            <img 
+              src="https://via.placeholder.com/400x300" 
+              alt="Internship experience placeholder" 
+              className={styles.placeholderImage} 
+            />
+          </div>
+        </section>
+
+        {/* Goals Section */}
+        <section className={styles.section}>
+          <h2 className={styles.heading}>Future Goals</h2>
+          <div className={styles.contentGrid}>
+            <img 
+              src="https://via.placeholder.com/400x300" 
+              alt="Goals placeholder - innovative projects" 
+              className={styles.placeholderImage} 
+            />
+            <div>
+              <p>
+                Looking ahead, I aim to merge my skills in Full-Stack Development with AI/ML technologies to create intelligent, 
+                impactful applications. I am committed to contributing to the tech community, mentoring others, and building projects 
+                that make a difference.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Connect Section */}
+        <section className={styles.section}>
+          <h2 className={styles.heading}>Connect with Me</h2>
+          <p>Let’s collaborate and build something amazing together!</p>
+          <div className={styles.socialLinksGrid}>
             <a href="https://github.com/JAILBREAK-101" target="_blank" rel="noopener noreferrer">
-                <FaGithub className={styles.socialIcon} /> GitHub
+              <FaGithub className={styles.socialIcon} /> GitHub
             </a>
             <a href="https://linkedin.com/in/oluwagbemigaawosope" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className={styles.socialIcon} /> LinkedIn
+              <FaLinkedin className={styles.socialIcon} /> LinkedIn
             </a>
             <a href="https://twitter.com/GenixTech1" target="_blank" rel="noopener noreferrer">
-                <FaTwitter className={styles.socialIcon} /> Twitter
+              <FaTwitter className={styles.socialIcon} /> Twitter
             </a>
             <a href="https://youtube.com/@Genix-Js" target="_blank" rel="noopener noreferrer">
-                <FaYoutube className={styles.socialIcon} /> YouTube
+              <FaYoutube className={styles.socialIcon} /> YouTube
             </a>
-            </div>
-        </div>
-        </div>
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 }

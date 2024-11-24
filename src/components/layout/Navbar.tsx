@@ -26,15 +26,15 @@ export default function Navbar() {
       
       <ol className={`${styles.semi_navbar} ${isMobileMenuOpen ? styles.open : ''}`}>
         <li className={styles.navbar_nav}>
+          <Link className={styles.navbar_link} href="/about">About</Link>
+        </li>
+        <li className={styles.navbar_nav}>
+          <Link className={styles.navbar_link} href="/contact">Contact</Link>
+        </li>
+        <li className={styles.navbar_nav}>
           <Link className={styles.navbar_link} href="https://www.github.com/JAILBREAK-101">
-            <FaGithub size={20} className={styles.nav_icon} />
+            <FaGithub size={25} className={styles.nav_icon} />
           </Link>
-        </li>
-        <li className={styles.navbar_nav}>
-          <Link className={styles.navbar_link} href="/about">About me</Link>
-        </li>
-        <li className={styles.navbar_nav}>
-          <Link className={styles.navbar_link} href="/contact">Contact me</Link>
         </li>
       </ol>
     </nav>

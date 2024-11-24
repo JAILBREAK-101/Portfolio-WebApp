@@ -5,7 +5,7 @@
 import { useState, } from "react";
 import { useRouter } from "next/router";
 import { Card } from "../../ui/Card";
-import styles from "../../styles/pages.module/Dashboard/Projects.module.css";
+import styles from "../../../styles/pages.module/Dashboard/Projects.module.css";
 import customFetch from "../../../lib/utils/api";
 import { TProject } from "../../../types/dashboard.types";
 import ReactJs from "@/assets/icons/react.svg";

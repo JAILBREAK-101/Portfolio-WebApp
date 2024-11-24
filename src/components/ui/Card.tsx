@@ -52,6 +52,7 @@ export const Card: React.FC<CardProps> = ({
         {isProjectCard && techstack.length > 0 && (
           <div className={styles.techStack}>
             {techstack.map((tech) => (
+              // techIcons[tech]
               <img
                 key={tech}
                 src={techIcons[tech]}

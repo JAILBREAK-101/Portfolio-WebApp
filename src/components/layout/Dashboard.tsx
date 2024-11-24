@@ -4,7 +4,7 @@ import styles from "../../styles/pages.module/Dashboard/Dashboard.module.css";
 
 export default function Dashboard({children}) {
   return (
-    <>
+    <div className={styles.dashboardLayout}>
       <Navbar />
       <div className={styles.dashboard}>
         <Sidebar />
@@ -12,6 +12,6 @@ export default function Dashboard({children}) {
           {children}
         </div>
       </div>
-    </>
+    </div>
   );
 }

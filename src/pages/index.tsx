@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Gbemiga from "@/assets/images/Gbemiga.jpg";
+import GTS from "@/assets/images/GTS.png";
 import Layout from '../components/layout/Layout';
 import styles from '../styles/pages.module/Home/Home.module.css';
 import Link from 'next/link';
@@ -29,7 +29,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <Image
-            src={Gbemiga}
+            src={GTS}
             alt="Profile Picture"
             width={200}
             height={200}
@@ -50,16 +50,29 @@ export default function Home() {
           <a href="https://youtube.com/@Genix-Js" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
         </motion.div>
 
-        {/* Explore Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1 }}
-        >
-          <Link href="/dashboard">
-            <Button btnClass={`${styles.exploreButton}`} body={'See my work'} />
-          </Link>
-        </motion.div>
+        <div className={styles.buttonGroup}>
+          {/* Explore Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+          >
+            <Link href="/dashboard">
+              <Button btnClass={`${styles.exploreButton}`} body={'See my work'} />
+            </Link>
+          </motion.div>
+          
+          {/* Hire me button Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+          >
+            <Link href="/contact">
+              <Button btnClass={`${styles.secondaryButton}`} body={'Hire Me'} />
+            </Link>
+          </motion.div>
+        </div>
       </div>
     </Layout>
   );

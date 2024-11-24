@@ -14,9 +14,9 @@ export default function Sidebar() {
           </Link>
         </li>
         <li>
-          <Link className='next-link' title='Projects' href="/dashboard/projects">
+          <Link className='next-link' title='Products' href="/dashboard/projects">
             <span className={styles.icon}><FaCode /></span>
-            <span className={styles.label}>Projects</span>
+            <span className={styles.label}>Products</span>
           </Link>
         </li>
         <li>
