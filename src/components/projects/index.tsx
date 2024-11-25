@@ -4,6 +4,10 @@ import { TProject } from "@/types/dashboard.types";
 import { SiFirebase, SiFlask, SiGooglecloud, SiHeroku, SiTailwindcss } from "react-icons/si";
 import { DiPostgresql, DiMongodb, DiExtjs } from "react-icons/di";
 import { FaReact, FaNodeJs } from "react-icons/fa";
+import SubtitloScreenshot from "@/assets/images/Subtilo_Screenshot.png"
+import SubtitloScreenshotTwo from "@/assets/images/Subtilo_Screenshot_two.png"
+import SISTNHomepage from "@/assets/images/SISTN-Homepage.png"
+import SISTNCategoriesPage from "@/assets/images/SISTN-Category.png"
 
 const categories = {
     "Design Works": ["Illustrations", "Logo Designs", "Flyer Designs", "UI Mockups", "Figma Templates"],
@@ -22,13 +26,15 @@ export const projectData: TProject[] = [
       id: "1",
       name: "Subtilo",
       description: "Subtitle Generation Application",
-      image: "",
+      image: SubtitloScreenshot,
       githublink: "",
       livelink: "",
       techstack: ["React.Js", "Redux", "Tailwind CSS", "Node.Js", "Flask", "PostgreSQL", "MongoDB", "Firebase", "Google Cloud Services", "Heroku"],
       detailsLink: "Learn More",
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
-      screenshots: [],
+      screenshots: [
+        SubtitloScreenshot, SubtitloScreenshotTwo
+      ],
       gitHubHistory: {
         link: "https://github.com/example", message: "Initial commit", date: "2024-11-24" ,
       },
@@ -39,7 +45,7 @@ export const projectData: TProject[] = [
       id: "2",
       name: "ChatUp",
       description: "Enterprise-level Collaboration Application for managing projects, teams and scaling up big time",
-      image: "",
+      // image: "",
       githublink: "",
       livelink: "",
       techstack: ["React.Js", "Redux", "Tailwind CSS", "Node.Js", "Flask", "PostgreSQL", "MongoDB", "Firebase", "Google Cloud Services", "Heroku"],
@@ -56,7 +62,7 @@ export const projectData: TProject[] = [
       id: "3",
       name: "Queenz Treats n Events",
       description: "Website for Queenz Treats n Events",
-      image: "",
+      // image: "",
       githublink: "",
       livelink: "",
       techstack: ["React.Js", "Redux", "Tailwind CSS", "Node.Js", "Flask", "PostgreSQL", "MongoDB", "Firebase", "Google Cloud Services", "Heroku"],
@@ -73,7 +79,7 @@ export const projectData: TProject[] = [
       id: "4",
       name: "ThoughtSphere",
       description: "Blogging Application for my Brand: GenixTechSolutions where I share my thoughts and connect with like-minds. Live updates on my development journey and my blog articles are also involved",
-      image: "",
+      // image: "",
       githublink: "",
       livelink: "",
       techstack: ["React.Js", "Redux", "Tailwind CSS", "Node.Js", "Flask", "PostgreSQL", "MongoDB", "Firebase", "Google Cloud Services", "Heroku"],
@@ -90,13 +96,15 @@ export const projectData: TProject[] = [
       id: "5",
       name: "SISTN",
       description: "Website for a nongovernmental organisation registered in Nigeria by the Corporate Affairs Commission (CAC) with a broad mandate to cater for the professional interests of information professionals and allied disciplines in Nigeria.",
-      image: "",
+      image: SISTNHomepage,
       githublink: "",
       livelink: "",
       techstack: ["React.Js", "Redux", "Tailwind CSS", "Node.Js", "Express.Js", "Netlify"],
       detailsLink: "Learn More",
       problemStatement: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto odio enim quod quibusdam sint placeat veritatis vero possimus pariatur est culpa aut, beatae totam rerum, minus veniam maxime! Quaerat!",
-      screenshots: [],
+      screenshots: [
+        SISTNHomepage, SISTNCategoriesPage
+      ],
       gitHubHistory: {
         link: "https://github.com/example", message: "Initial commit", date: "2024-11-24" ,
       },

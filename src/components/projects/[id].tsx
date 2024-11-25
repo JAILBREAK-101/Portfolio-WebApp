@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../../styles/pages.module/Dashboard/ProjectDetails.module.css";
 import { projectData } from "./index";
 import { Button } from "../form/Button/Button";
+import Image from "next/image";
 
 export default function ProjectDetail() {
   const router = useRouter();
@@ -36,7 +37,7 @@ export default function ProjectDetail() {
         <div className={styles.screenshotContainer}>
           {project.screenshots.length > 0 ? (
             project.screenshots.map((screenshot, index) => (
-              <img key={index} src={screenshot} alt={`Screenshot ${index + 1}`} className={styles.screenshot} />
+              <Image key={index} src={screenshot} alt={`Screenshot ${index + 1}`} className={styles.screenshot} />
             ))
           ) : (
             <img src="https://via.placeholder.com/300x200?text=No+Screenshot+Available" alt="Placeholder screenshot" className={styles.screenshotPlaceholder} />

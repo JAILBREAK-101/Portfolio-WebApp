@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../../styles/component.module/Card.module.css';
 import { IconType } from 'react-icons';
+import Image, { StaticImageData } from 'next/image';
 
 interface ProjectLink {
   url: string;
@@ -9,7 +10,7 @@ interface ProjectLink {
 }
 
 interface CardProps {
-  image: string;
+  image: StaticImageData;
   title: string;
   description: string;
   link: string;
@@ -32,7 +33,7 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div className={styles.card}>
       <div className="relative">
-        <img src={image} alt={title} className={styles.image} />
+        <Image src={image} alt={title} className={styles.image} />
         {isProjectCard && projectLinks.length > 0 && (
           <div className={styles.projectOverlay}>
             {projectLinks.map((projectLink, index) => (
