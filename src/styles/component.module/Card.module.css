@@ -29,11 +29,11 @@
 .title {
   font-size: 1.75rem;
   font-weight: bold;
-  color: #4A4A4A; /* Change as needed */
+  color: whitesmoke; /* Change as needed */
 }
 
 .description {
-  color: #5A5A5A; /* Change as needed */
+  color: whitesmoke; /* Change as needed */
   margin-bottom: 1rem;
 }
 
@@ -78,6 +78,7 @@
   display: flex;
   gap: 12px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .tech > * {
