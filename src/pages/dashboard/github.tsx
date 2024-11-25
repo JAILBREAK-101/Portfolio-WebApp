@@ -4,7 +4,11 @@ import GitHub from '../../components/GitHub';
 export default function DashboardIndex() {
   return (
     <Dashboard>
-      <GitHub activities={[]} />
+      <GitHub activities={[
+        {
+          description: "Initialize Portfolio"
+        }
+      ]} />
     </Dashboard>
   );
 }
