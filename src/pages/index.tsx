@@ -17,8 +17,8 @@ export default function Home() {
           transition={{ duration: 0.8 }}
         >
           <h1 className={styles.title}>GenixTech Solutions</h1>
-          <p className={styles.subheading}>Software Engineer || Graphic Designer || YouTuber</p>
-          <blockquote className={styles.quote}>"Your Vision! My Solution!"</blockquote>
+          <p className={styles.subheading}>Software Engineering || Graphic Design || YouTube</p>
+          <blockquote className={styles.quote}>"Your Vision! Our Solution!"</blockquote>
           {/* <blockquote className={styles.quote}>"Curiosity fuels me to do more."</blockquote> */}
         </motion.div>
 
@@ -58,7 +58,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <Link href="/dashboard">
-              <Button btnClass={`${styles.exploreButton}`} body={'See my work'} />
+              <Button btnClass={`${styles.exploreButton}`} body={'Learn More About Us'} />
             </Link>
           </motion.div>
           
@@ -68,12 +68,45 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            <Link href="/contact">
-              <Button btnClass={`${styles.secondaryButton}`} body={'Hire Me'} />
+            <Link href="/dashboard/services">
+              <Button btnClass={`${styles.secondaryButton}`} body={'Explore Our Services'} />
             </Link>
           </motion.div>
         </div>
       </div>
+
+      {/* <section className={styles.missionSection}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+        >
+        <h2 className={styles.sectionTitle}>What We Do</h2>
+        <div className={styles.services}>
+          <div className={styles.serviceItem}>
+            <FaGithub className={styles.icon} />
+            <h3>Software Development</h3>
+            <p>Building robust and scalable software solutions tailored to your needs.</p>
+          </div>
+          <div className={styles.service}>
+            <FaYoutube className={styles.icon} />
+            <h3>YouTube Content</h3>
+            <p>Educational tech tutorials and creative content.</p>
+          </div>
+          {/* <div className={styles.serviceItem}>
+            <FaYoutube className={styles.icon} />
+            <h3>Creative Content Creation</h3>
+            <p>Producing engaging videos and designs that tell your story.</p>
+          </div>
+          <div className={styles.serviceItem}>
+            <FaLinkedin className={styles.icon} />
+            <h3>Graphic Design</h3>
+            <p>Crafting visually stunning designs that make your brand stand out.</p>
+          </div>
+        </div>
+      </motion.div>
+    </section> */}
+    
     </Layout>
   );
 }

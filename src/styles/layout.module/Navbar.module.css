@@ -1,12 +1,14 @@
 /* Navbar Styles */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.2rem 2rem;
+  padding: 1rem 2rem;
   background-color: var(--white);
-  position: relative;
-  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar_brand {
@@ -36,14 +38,23 @@
   color: var(--dark);
   text-decoration: none;
   font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar_nav .navbar_link:hover {
-  text-decoration: underline;
+  color: var(--primary-color);
+  transform: scale(1.1);
+  text-decoration: none;
 }
 
 .nav_icon {
   color: var(--dark);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav_icon:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
 }
 
 /* Responsive Menu Styles */
