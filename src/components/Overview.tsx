@@ -26,7 +26,7 @@ export default function Overview() {
       {/* Welcome and Introduction */}
       <div className={styles.welcome}>
         <h1>GenixTech Solutions</h1>
-        <p>Explore my projects and solutions that leverage modern tools to create innovative software, designs, and content.</p>
+        <p>Explore my <Link className={styles.link} href={"/dashboard/projects"}>projects</Link> and <Link className={styles.link} href={"/dashboard/projects"}>solutions</Link> that leverage modern tools to create innovative software, designs, and content.</p>
       </div>
 
       {/* Skills & Technologies */}
