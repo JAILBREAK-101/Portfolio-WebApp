@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .content {
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .countdown {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .emailInput {
+    padding: 10px;
+    width: 80%;
+    margin-right: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .socialLinks a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .socialLinks a:hover {
+    text-decoration: underline;
+  }
+  

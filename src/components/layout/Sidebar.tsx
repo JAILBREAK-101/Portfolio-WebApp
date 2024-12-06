@@ -8,48 +8,48 @@ export default function Sidebar() {
     <aside className={`side-panel ${styles.sidebar}`}>
       <ul>
         <li>
-          <Link href="/dashboard">
+          <Link className='next-link' title='Overview' href="/dashboard">
             <span className={styles.icon}><FaHouseChimneyUser /></span>
             <span className={styles.label}>Overview</span>
           </Link>
         </li>
         <li>
-          <Link href="/dashboard/projects">
+          <Link className='next-link' title='Products' href="/dashboard/projects">
             <span className={styles.icon}><FaCode /></span>
-            <span className={styles.label}>Projects</span>
+            <span className={styles.label}>Products</span>
           </Link>
         </li>
         <li>
-          <Link href="/dashboard/services">
+          <Link className='next-link' title='Services' href="/dashboard/services">
             <span className={styles.icon}><FaLaptopCode /></span>
             <span className={styles.label}>Services</span>
           </Link>
         </li>
         <li>
-          <Link href="/dashboard/youtube">
+          <Link className='next-link' title='YouTube' href="/dashboard/youtube">
             <span className={styles.icon}><FaYoutube /></span>
             <span className={styles.label}>YouTube</span>
           </Link>
         </li>
         <li>
-          <Link href="/dashboard/github">
+          <Link className='next-link' title='GitHub' href="/dashboard/github">
             <span className={styles.icon}><FaGithub /></span>
             <span className={styles.label}>GitHub</span>
           </Link>
         </li>
         <li>
-          <Link href="/dashboard/resume">
+          <Link className='next-link' title='Resume' href="/dashboard/resume">
             <span className={styles.icon}><FaCertificate /></span>
             <span className={styles.label}>Resume</span>
           </Link>
         </li>
       </ul>
 
-      <Button
+      {/* <Button
         body={
           <Link href={'/about'}>About me</Link>
         }
-      />
+      /> */}
 
       {/* <Button
         body={

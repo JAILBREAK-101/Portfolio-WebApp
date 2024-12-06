@@ -1,17 +1,34 @@
-// import { getGitHubActivity } from '../lib/github';
+interface GitHubProps {
+  activities: [
+    activity: {
+      description: string;
+    }
+  ];
+}
 
-export default function GitHub({ activities }) {
+export default function GitHub({ activities }: GitHubProps) {
   return (
-    <>
+    <div style={{color: "whitesmoke", textAlign: "center"}}>
       <h1>My GitHub Activity</h1>
       <ul className=''>
         {activities.map((activity, index) => (
           <li key={index}>
-            <p>{activity.description}</p>
+            {/* <p>{activity.description}</p> */}
           </li>
         ))}
       </ul>
-    </>
+
+      <div style={{
+        background: "white",
+        color: "black",
+        padding: "1rem",
+        display: "flex",
+        fontSize: "24px",
+        textAlign: "center"
+      }}>
+        Page Under Construction
+      </div>
+    </div>
   );
 }
 

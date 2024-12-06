@@ -1,17 +1,26 @@
-import Dashboard from "./layout/Dashboard";
+import Image from "next/image";
 
 export default function YouTube() {
   return (
     <>
-      <h1>My YouTube Channel</h1>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/@Genix-Js"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+      <h1 style={{color: "whitesmoke", textAlign: "center"}}>My YouTube Channel</h1>
+
+      {/* <div className="flex">
+        <h2>Genix-Js</h2>
+        <Image src={""} alt={""} />
+        <p>Subscribers</p>
+      </div> */}
+
+      <div style={{
+        background: "white",
+        color: "black",
+        padding: "1rem",
+        display: "flex",
+        fontSize: "24px",
+        textAlign: "center"
+      }}>
+        Page Under Construction
+      </div>
     </>
   );
 }

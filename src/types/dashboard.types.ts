@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type TProject = {
     detailsLink: string;
     id: string | number;
@@ -6,11 +8,17 @@ export type TProject = {
     techstack: string[];
     githublink: string;
     livelink: string;
-    image: string;
+    image?: StaticImageData;
     problemStatement: string;
-    screenshots: string[];
-    gitHubHistory: string[];
+    screenshots: StaticImageData[];
+    gitHubHistory: {
+        link: string,
+        message: string,
+        date: string,
+    };
     phase: string;
+    projectType: "design" | "web-app" | "website" | "mobile-app" | "custom-software";
+    techIcons?: {},
 }
 
 export type TServices = {

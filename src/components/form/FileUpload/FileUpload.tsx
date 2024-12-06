@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { FileUploadProps } from "./FIleUpload.types";
 import styles from "./FileUpload.module.css";

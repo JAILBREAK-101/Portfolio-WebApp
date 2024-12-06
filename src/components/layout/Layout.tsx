@@ -1,8 +1,9 @@
 import Navbar from './Navbar';
 import Footer from './Footer';
 import styles from '../../styles/layout.module/Layout.module.css';
+import { TypeComponent } from '@/types/global.types';
 
-export default function Layout({ children }) {
+const Layout: React.FC<TypeComponent> = ({ children }) => {
   return (
     <div className={`main-page ${styles.layout}`}>
       <Navbar />
@@ -11,3 +12,5 @@ export default function Layout({ children }) {
     </div>
   );
 }
+
+export default Layout;
