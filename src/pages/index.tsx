@@ -17,7 +17,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
         >
           <h1 className={styles.title}>GenixTech Solutions</h1>
-          <p className={styles.subheading}>Software Engineering || Graphic Design || YouTube</p>
+          <p className={styles.subheading}>Software Engineering || Systems Design || Graphic & UIUX Design || YouTube</p>
           <blockquote className={styles.quote}>"Your Vision! Our Solution!"</blockquote>
           {/* <blockquote className={styles.quote}>"Curiosity fuels me to do more."</blockquote> */}
         </motion.div>

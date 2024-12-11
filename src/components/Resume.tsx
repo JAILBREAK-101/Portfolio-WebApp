@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { parsePdf } from "@/lib/utils/pdfParser";
+// import { parsePdf } from "@/lib/utils/pdfParser";
 import styles from "@/styles/pages.module/Dashboard/Resume.module.css";
 
 const pdfPath = "/path/to/resume.pdf"; // Ensure the PDF is in the public folder.
@@ -7,7 +7,7 @@ const pdfPath = "/path/to/resume.pdf"; // Ensure the PDF is in the public folder
 type Experience = {
   role: string;
   company: string;
-  description: string;
+  description: string[];
   date: string;
 };
 
@@ -33,30 +33,46 @@ export default function Resume(): JSX.Element {
   useEffect(() => {
     const loadResumeData = async () => {
       try {
-        const pdfText = await parsePdf(pdfPath);
+        // const pdfText = await parsePdf(pdfPath);
 
         // Parse the text into structured data (simplified example)
         const parsedData: ResumeData = {
           experiences: [
             {
               role: "Frontend Developer",
-              company: "XYZ Corp",
-              description: "Developed and maintained web applications using React and Next.js.",
-              date: "Jan 2022 - Present",
+              company: "390 Labs",
+              description: [
+                  "- Developed and maintained web applications using React and Next.js.",
+
+                  "- Worked with cross-functional teams, including designers, backend engineers, and product managers, to turn project ideas into measurable, business-driven results.",
+                
+                  "- Increased practical application of knowledge in web application development by gaining proficiency in the Angular Framework, effectively contributing to the development of another of the company’s product.",
+                
+                  "- Maintained website performance by conducting regular updates and addressing compatibility issues across various platforms."
+              ],
+              date: "March 2023 - August 2023",
             },
             {
-              role: "UI/UX Designer",
-              company: "Creative Studio",
-              description: "Designed user-friendly interfaces and optimized user experiences.",
-              date: "May 2020 - Dec 2021",
+              role: "Frontend Developer",
+              company: "Liquidmoni",
+              description: [
+                "- Developed and maintained web applications using React and Next.js.",
+
+                "- Worked with cross-functional teams, including designers, backend engineers, and product managers, to turn project ideas into measurable, business-driven results.",
+              
+                "- Increased practical application of knowledge in web application development by gaining proficiency in the Angular Framework, effectively contributing to the development of another of the company’s product.",
+              
+                "- Maintained website performance by conducting regular updates and addressing compatibility issues across various platforms."
+              ],
+              date: "May 2023 - June 2023",
             },
           ],
-          skills: ["React", "Next.js", "JavaScript", "TailwindCSS", "TypeScript", "Figma"],
+          skills: ["React", "Next.js", "Angular", "JavaScript", "TailwindCSS", "TypeScript", "Figma"],
           education: [
             {
-              degree: "B.Sc. in Computer Science",
-              institution: "Tech University",
-              date: "2016 - 2020",
+              degree: "B.Sc. Computer Science",
+              institution: "Trinity University",
+              date: "2021 - 2024",
             },
           ],
         };
@@ -100,7 +116,9 @@ export default function Resume(): JSX.Element {
               <p className={styles.company}>
                 {exp.company} | {exp.date}
               </p>
-              <p className={styles.description}>{exp.description}</p>
+              <ul>{exp.description.map(eachDescription => {
+                return <li className={styles.description}>{eachDescription} <br /></li>
+              })}</ul>
             </li>
           ))}
         </ul>

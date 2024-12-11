@@ -65,8 +65,8 @@ export default function YouTube() {
         {channelDetails ? (
           <div className={styles.youtubeHeaderDescription}>
             <p>{channelDetails.description}</p>
-            <p>{channelDetails.motivation}</p>
-            <p>{channelDetails.goal}</p>
+            <p>Motivation: {channelDetails.motivation}</p>
+            <p>Goal: {channelDetails.goal}</p>
             <div className={styles.youtubeHeaderCallToAction}>
               <Button body={"Subscribe"} />
               <Button body={"View on YouTube"} />

@@ -11,9 +11,9 @@ import SISTNCategoriesPage from "@/assets/images/SISTN-Category.png"
 
 const categories = {
     "Design Works": ["Illustrations", "Logo Designs", "Flyer Designs", "UI Mockups", "Figma Templates"],
-    // "Mobile Apps": ["ChatUp"],
+    "Mobile Apps": ["ChatUp"],
     "Web Apps": [
-      // "ThoughtSphere", 
+      "ThoughtSphere", 
       "Subtilo"
     ],
     "Websites": ["Queenz Treats n Events", "SISTN"],

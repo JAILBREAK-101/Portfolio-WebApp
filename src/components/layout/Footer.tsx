@@ -52,7 +52,7 @@ export default function Footer() {
         <p style={{ fontSize: "0.9rem", marginBottom: "0.5rem" }}>
           Email: <a href="mailto:info@genixtechsolutions.com" style={{ color: "white" }}>info@genixtechsolutions.com</a>
         </p>
-        <p style={{ fontSize: "0.9rem" }}>Phone: +1 (123) 456-7890</p>
+        <p style={{ fontSize: "0.9rem" }}><span>Phone:</span> +1 (123) 456-7890</p>
 
         {/* Copyright */}
         <p style={{ fontSize: "0.8rem", marginTop: "1rem" }}>

@@ -41,13 +41,13 @@ export default function Overview() {
             <p>Website for a nongovernmental organisation registered in Nigeria by the Corporate Affairs Commission (CAC) with a broad mandate to cater for the professional interests of information professionals and allied disciplines in Nigeria.</p>
             <span><b>Tech Stack:</b> React, TailwindCSS, PHP, MySQL, Hostinger</span>
             <div style={{display: 'flex', gap: '1rem', marginTop: "10px"}}>
-              <Link href='https://www.sistn.org'>
+              <Link target='_blank' href='https://www.sistn.org'>
                 <Button 
                   body={<FaLink />}
                 />
               </Link>
 
-              <Link href='https://github.com/JAILBREAK-101/SISTN_web'>
+              <Link target='_blank' href='https://github.com/JAILBREAK-101/SISTN_web'>
                 <Button 
                   body={<FaGithub color='white'/>}
                   />
@@ -64,7 +64,7 @@ export default function Overview() {
                   <FaLink />
                 </a>}
               /> */}
-              <Link href='https://github.com/JAILBREAK-101/Subtilo_Frontend'>
+              <Link target='_blank' href='https://github.com/JAILBREAK-101/Subtilo_Frontend'>
                 <Button 
                   body={<FaGithub color='white'/>}
                 />
