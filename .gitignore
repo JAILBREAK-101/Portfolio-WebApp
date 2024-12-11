@@ -10,6 +10,9 @@
 !.yarn/releases
 !.yarn/versions
 
+# ignores
+not_tracking/
+
 # Tasks and Non-Tracked files
 tasks
 not_tracking

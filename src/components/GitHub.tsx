@@ -1,5 +1,3 @@
-// import { getGitHubActivity } from '../lib/github';
-
 interface GitHubProps {
   activities: [
     activity: {

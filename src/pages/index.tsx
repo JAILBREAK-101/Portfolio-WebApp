@@ -141,7 +141,28 @@ export default function Home() {
 //         <div className={styles.countdown}>
 //           <Countdown date={tenDaysFromNow} />
 //         </div>
+//     <div className={styles.container}>
+//       <div className={styles.content}>
+//         <h1 className={styles.heading}>My Website is Coming Soon!</h1>
+//         <p className={styles.description}>I'm building something amazing. Stay tuned for updates!</p>
 
+//         {/* Countdown (optional) */}
+//         <div className={styles.countdown}>
+//           <Countdown date={tenDaysFromNow} />
+//         </div>
+
+//         {/* Sign-up Form */}
+//         <form onSubmit={handleSubmit} className={styles.form}>
+//           <input
+//             type="email"
+//             placeholder="Enter your email to stay updated"
+//             value={email}
+//             onChange={handleInputChange}
+//             className={styles.emailInput}
+//             required
+//           />
+//           <button type="submit" className={styles.submitButton}>Notify Me</button>
+//         </form>
 //         {/* Sign-up Form */}
 //         <form onSubmit={handleSubmit} className={styles.form}>
 //           <input
@@ -163,8 +184,16 @@ export default function Home() {
 //           <a href="https://linkedin.com/in/jailbreak" target="_blank" rel="noopener noreferrer">
 //             LinkedIn
 //           </a>
+//         <div className={styles.socialLinks}>
+//           <a href="https://github.com/JAILBREAK-101" target="_blank" rel="noopener noreferrer">
+//             GitHub
+//           </a>
+//           <a href="https://linkedin.com/in/jailbreak" target="_blank" rel="noopener noreferrer">
+//             LinkedIn
+//           </a>
 //         </div>
 //       </div>
+//     </div>
 //     </div>
 //   );
 // }
