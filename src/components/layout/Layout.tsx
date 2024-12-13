@@ -6,7 +6,7 @@ import { TypeComponent } from '@/types/global.types';
 const Layout: React.FC<TypeComponent> = ({ children }) => {
   return (
     <div className={`main-page ${styles.layout}`}>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>{children}</main>
       <Footer />
     </div>

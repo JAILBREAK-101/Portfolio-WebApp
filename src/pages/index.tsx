@@ -69,7 +69,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <Link href="/dashboard/services">
-              <Button btnClass={`${styles.secondaryButton}`} body={"Let's Collaborate"} />
+              <Button btnClass={`${styles.secondaryButton}`} body={"Let's Build for you"} />
             </Link>
           </motion.div>
         </div>

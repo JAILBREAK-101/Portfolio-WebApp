@@ -5,8 +5,6 @@ import Logo from "@/assets/images/GTS.png";
 import Image from 'next/image';
 import { useState } from 'react';
 
-// Changes: Added Sticky Scroll, Hover Effect for links and Accessibility Properties
-
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -31,7 +29,10 @@ export default function Navbar() {
           <Link className={styles.navbar_link} href="/about">About</Link>
         </li>
         <li className={styles.navbar_nav}>
-          <Link className={styles.navbar_link} href="/contact">Contact</Link>
+          <Link className={styles.navbar_link} href="/dashboard/services">What we offer</Link>
+        </li>
+        <li className={styles.navbar_nav}>
+          <Link className={styles.navbar_link} href="/contact">Book a consultation</Link>
         </li>
         <li className={styles.navbar_nav}>
           <Link className={styles.navbar_link} href="https://www.github.com/JAILBREAK-101">
