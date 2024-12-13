@@ -57,8 +57,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            <Link href="/dashboard">
-              <Button btnClass={`${styles.exploreButton}`} body={'Learn More About Us'} />
+            <Link href="/dashboard/projects">
+              <Button btnClass={`${styles.exploreButton}`} body={'Explore My Work'} />
             </Link>
           </motion.div>
           
@@ -69,7 +69,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <Link href="/dashboard/services">
-              <Button btnClass={`${styles.secondaryButton}`} body={'Explore Our Services'} />
+              <Button btnClass={`${styles.secondaryButton}`} body={"Let's Collaborate"} />
             </Link>
           </motion.div>
         </div>

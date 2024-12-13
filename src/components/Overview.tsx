@@ -75,49 +75,6 @@ export default function Overview() {
         </div>
       </div>
 
-      {/* Highlighted Projects
-      <div className={styles.projectsOverview}>
-      <h2>Recent Projects</h2>
-      <p>Here are my most recent projects and open source contributions</p>
-      <div className={styles.projectsGrid}>
-        {projects.map((project, index) => (
-          <div key={index} className={styles.projectCard}>
-            <h3>{project.name}</h3>
-            <p>{project.description || "No description provided."}</p>
-            <span>
-              <b>Primary Language:</b> {project.primaryLanguage?.name || "N/A"}
-            </span>
-            <div style={{ display: "flex", gap: "1rem", marginTop: "10px" }}>
-              {project.homepageUrl && (
-                <a href={project.homepageUrl} target="_blank" rel="noreferrer">
-                  <FaLink />
-                </a>
-              )}
-              <a href={project.url} target="_blank" rel="noreferrer">
-                <FaGithub color="black" />
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div> */}
-
-      {/* Certifications */}
-      {/* <div className={styles.certifications}>
-        <h2>Certifications</h2>
-        <div className={styles.certificationList}>
-          <div className={styles.certificationCard}>
-            <MdSchool className={styles.certificationIcon} />
-            <p>Full-Stack Web Development - XYZ Academy</p>
-          </div>
-          <div className={styles.certificationCard}>
-            <MdSchool className={styles.certificationIcon} />
-            <p>Python Programming - ABC Institute</p>
-          </div>
-          {/* Add more certifications as needed */}
-        {/* </div> */}
-      {/* </div> */}
-
       {/* Social Links */}
       <div className={styles.socialLinks}>
         <h2>Connect with Me</h2>
