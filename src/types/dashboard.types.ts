@@ -1,3 +1,4 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { StaticImageData } from "next/image";
 
 export type TProject = {
@@ -8,7 +9,7 @@ export type TProject = {
     techstack: string[];
     githublink: string;
     livelink: string;
-    image?: StaticImageData;
+    image?: StaticImport;
     problemStatement: string;
     screenshots: StaticImageData[];
     gitHubHistory: {
