@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import GTS from "@/assets/images/GTS.png";
-import Layout from '../components/layout/Layout';
 import styles from '../styles/pages.module/Home/Home.module.css';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa6';
 import { Button } from "../components/form/Button/Button";
+import Footer from '@/components/layout/Footer';
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <div className={styles.landing}>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -57,8 +57,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            <Link href="/dashboard">
-              <Button btnClass={`${styles.exploreButton}`} body={'Learn More About Us'} />
+            <Link href="/dashboard/projects">
+              <Button btnClass={`${styles.exploreButton}`} body={'Explore My Works'} />
             </Link>
           </motion.div>
           
@@ -69,7 +69,19 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <Link href="/dashboard/services">
-              <Button btnClass={`${styles.secondaryButton}`} body={'Explore Our Services'} />
+              <Button btnClass={`${styles.secondaryButton}`} body={"Let's build for you"} />
+            </Link>
+          </motion.div>
+        </div>
+
+        <div className={`${styles.buttonBelow}`}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+          >
+            <Link href="/about">
+              <Button btnClass={`${styles.secondaryButton__outline}`} body={"Know my journey"} />
             </Link>
           </motion.div>
         </div>
@@ -106,8 +118,7 @@ export default function Home() {
         </div>
       </motion.div>
     </section> */}
-    
-    </Layout>
+    </>
   );
 }
 

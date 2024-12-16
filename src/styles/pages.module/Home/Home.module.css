@@ -64,7 +64,13 @@
   align-items: center;
 }
 
-.exploreButton, .secondaryButton {
+.buttonBelow {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.exploreButton, .secondaryButton, .secondaryButton__outline {
   padding: 12px 24px;
   border: none;
   border-radius: 25px;
@@ -86,6 +92,12 @@
 .secondaryButton {
   background-color: var(--gray-dark);
   color: white;
+}
+
+.secondaryButton__outline {
+  background-color: transparent;
+  color: white;
+  border: 1px solid var(--gray-dark);
 }
 
 /* Mission Section Styles */

@@ -31,7 +31,10 @@ export default function Navbar() {
           <Link className={styles.navbar_link} href="/about">About</Link>
         </li>
         <li className={styles.navbar_nav}>
-          <Link className={styles.navbar_link} href="/contact">Contact</Link>
+          <Link className={styles.navbar_link} href="/dashboard/services">What we offer</Link>
+        </li>
+        <li className={styles.navbar_nav}>
+          <Link className={styles.navbar_link} href="/contact">Book a Consultation</Link>
         </li>
         <li className={styles.navbar_nav}>
           <Link className={styles.navbar_link} href="https://www.github.com/JAILBREAK-101">

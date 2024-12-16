@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from '../../styles/component.module/Card.module.css';
 import { IconType } from 'react-icons';
 import Image, { StaticImageData } from 'next/image';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 interface ProjectLink {
   url: string;
@@ -10,7 +11,7 @@ interface ProjectLink {
 }
 
 interface CardProps {
-  image: StaticImageData;
+  image: StaticImport | StaticImageData;
   title: string;
   description: string;
   link: string;
