@@ -5,8 +5,6 @@ import Logo from "@/assets/images/GTS.png";
 import Image from 'next/image';
 import { useState } from 'react';
 
-// Changes: Added Sticky Scroll, Hover Effect for links and Accessibility Properties
-
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
