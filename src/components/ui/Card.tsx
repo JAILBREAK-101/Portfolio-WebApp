@@ -11,7 +11,7 @@ interface ProjectLink {
 }
 
 interface CardProps {
-  image?: StaticImport;
+  image: StaticImport;
   title: string;
   description: string;
   link: string;
