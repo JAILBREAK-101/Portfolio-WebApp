@@ -9,7 +9,7 @@ export type TProject = {
     techstack: string[];
     githublink: string;
     livelink: string;
-    image?: StaticImport;
+    image: StaticImport;
     problemStatement: string;
     screenshots: StaticImageData[];
     gitHubHistory: {

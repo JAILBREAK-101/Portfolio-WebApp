@@ -4,6 +4,8 @@ import { TProject } from "@/types/dashboard.types";
 import { SiFirebase, SiFlask, SiGooglecloud, SiHeroku, SiTailwindcss } from "react-icons/si";
 import { DiPostgresql, DiMongodb, DiExtjs } from "react-icons/di";
 import { FaReact, FaNodeJs } from "react-icons/fa";
+
+// Screenshots
 import SubtitloScreenshot from "@/assets/images/Subtilo_Screenshot.png"
 import SubtitloScreenshotTwo from "@/assets/images/Subtilo_Screenshot_two.png"
 import SISTNHomepage from "@/assets/images/SISTN-Homepage.png"
@@ -45,7 +47,7 @@ export const projectData: TProject[] = [
       id: "2",
       name: "ChatUp",
       description: "Enterprise-level Collaboration Application for managing projects, teams and scaling up big time",
-      // image: "",
+      image: SubtitloScreenshot,
       githublink: "",
       livelink: "",
       techstack: ["React.Js", "Redux", "Tailwind CSS", "Node.Js", "Flask", "PostgreSQL", "MongoDB", "Firebase", "Google Cloud Services", "Heroku"],
@@ -62,7 +64,7 @@ export const projectData: TProject[] = [
       id: "3",
       name: "Queenz Treats n Events",
       description: "Website for Queenz Treats n Events",
-      // image: "",
+      image: SubtitloScreenshot,
       githublink: "",
       livelink: "",
       techstack: ["React.Js", "Redux", "Tailwind CSS", "Node.Js", "Flask", "PostgreSQL", "MongoDB", "Firebase", "Google Cloud Services", "Heroku"],
@@ -79,7 +81,7 @@ export const projectData: TProject[] = [
       id: "4",
       name: "ThoughtSphere",
       description: "Blogging Application for my Brand: GenixTechSolutions where I share my thoughts and connect with like-minds. Live updates on my development journey and my blog articles are also involved",
-      // image: "",
+      image: SubtitloScreenshot,
       githublink: "",
       livelink: "",
       techstack: ["React.Js", "Redux", "Tailwind CSS", "Node.Js", "Flask", "PostgreSQL", "MongoDB", "Firebase", "Google Cloud Services", "Heroku"],
