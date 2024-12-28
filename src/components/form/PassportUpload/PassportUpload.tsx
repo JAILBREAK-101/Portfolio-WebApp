@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { PassportUploadProps } from "./PassportUpload.types";
 import styles from "./PassportUpload.module.css";

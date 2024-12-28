@@ -1,4 +1,12 @@
 "use client";
+
+import { useState, } from "react";
+import { useRouter } from "next/router";
+import { Card } from "../ui/Card";
+import styles from "../../styles/pages.module/Dashboard/Projects.module.css";
+import customFetch from "../../lib/utils/api";
+import { TProject } from "../../types/dashboard.types";
+
 // project data
 export const projectData: TProject[] = [
   {
@@ -72,13 +80,6 @@ export const projectData: TProject[] = [
     phase: "Development"
   }
 ];
-
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import { Card } from "../ui/Card";
-import styles from "../../styles/pages.module/Dashboard/Projects.module.css";
-import customFetch from "../../lib/utils/api";
-import { TProject } from "../../types/dashboard.types";
 
 // Define the tech icons map
 const techIcons = {
