@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from "../styles/pages.module/Dashboard/Overview.module.css";
 import { FaReact, FaNodeJs, FaAngular } from "react-icons/fa";
-import { SiNextdotjs, SiPython, SiFlask, SiExpress, SiTailwindcss, SiSass, SiAdobephotoshop, SiAdobeillustrator, SiAdobeindesign, SiCanva, SiCss3, SiHtml5, SiTypescript } from "react-icons/si";
-import { DiJavascript, DiMongodb, DiPostgresql } from "react-icons/di";
+import { SiNextdotjs, SiPython, SiFlask, SiExpress, SiTailwindcss, SiSass, SiAdobephotoshop, SiAdobeillustrator, SiAdobeindesign, SiCanva, SiCss3, SiHtml5, SiTypescript, SiBootstrap } from "react-icons/si";
+import { DiJavascript, DiMongodb, DiPostgresql, DiPhp } from "react-icons/di";
 
 export default function SkillsOverview() {
   return (
@@ -10,12 +10,12 @@ export default function SkillsOverview() {
       <h2>Tech Stack</h2>
       <div className={styles.skillsList}>
         <div className={styles.skillBadge}>
-          <FaAngular color="#DD0031" size={40} />
-          <span className={styles.label}>Angular</span>
-        </div>
-        <div className={styles.skillBadge}>
           <FaReact color="#61DBFB" size={40} />
           <span className={styles.label}>React</span>
+        </div>
+        <div className={styles.skillBadge}>
+          <FaAngular color="#DD0031" size={40} />
+          <span className={styles.label}>Angular</span>
         </div>
         <div className={styles.skillBadge}>
           <SiNextdotjs color="#000000" size={40} />
@@ -40,6 +40,10 @@ export default function SkillsOverview() {
         <div className={styles.skillBadge}>
           <SiPython color="#3776AB" size={40} />
           <span className={styles.label}>Python</span>
+        </div>
+        <div className={styles.skillBadge}>
+          <DiPhp color="#3776AB" size={40} />
+          <span className={styles.label}>PHP</span>
         </div>
         <div className={styles.skillBadge}>
           <SiFlask color="#000000" size={40} />
@@ -68,6 +72,10 @@ export default function SkillsOverview() {
         <div className={styles.skillBadge}>
           <SiSass color="#CC6699" size={40} />
           <span className={styles.label}>SASS</span>
+        </div>
+        <div className={styles.skillBadge}>
+          <SiBootstrap color="#CC6699" size={40} />
+          <span className={styles.label}>Bootstrap</span>
         </div>
       </div>
 

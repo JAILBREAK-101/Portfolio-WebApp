@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #0070f3; /* Primary Blue */
+    --color-primary: rgb(0, 112, 243); /* Primary Blue */
     --color-secondary: #1e1e1e; /* Dark Gray */
     --color-accent: #ff4081; /* Accent Pink */
     --color-background: #f5f7fa; /* Light Background */

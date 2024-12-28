@@ -1,80 +1,77 @@
 import React from 'react';
 import styles from "../styles/pages.module/Dashboard/Overview.module.css";
 import { FaGithub, FaLink, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
-import { MdSchool } from 'react-icons/md';
 import SkillsOverview from './SkillOverview';
 import { Button } from './form/Button/Button';
+import Link from 'next/link';
 
 export default function Overview() {
+
+  // During Open Source Contributions
+  // const [projects, setProjects] = useState([]);
+
+  // useEffect(() => {
+  //   const fetchPinnedRepos = async () => {
+  //     const response = await fetch("/api/github");
+  //     const data = await response.json();
+  //     setProjects(data.data.user.pinnedItems.nodes);
+  //   };
+  
+  //   fetchPinnedRepos();
+  // }, []);  
+
   return (
     <div className={styles.overview}>
       
       {/* Welcome and Introduction */}
       <div className={styles.welcome}>
-        <h1>Welcome to My Portfolio</h1>
-        <p>I am a full-stack developer specializing in building responsive web applications with modern frameworks.</p>
+        <h1>GenixTech Solutions</h1>
+        <p>Explore my <Link className={styles.link} href={"/dashboard/projects"}>projects</Link> and <Link className={styles.link} href={"/dashboard/projects"}>solutions</Link> that leverage modern tools to create innovative software, designs, and content.</p>
       </div>
 
       {/* Skills & Technologies */}
       <SkillsOverview />
 
-      {/* Highlighted Projects */}
-
       {/* Dynamically Pull Projects from GitHub Pins */}
       <div className={styles.projectsOverview}>
-        <h2>Highlighted Projects</h2>
+        <h2>Recent Projects</h2>
         <div className={styles.projectsGrid}>
           <div className={styles.projectCard}>
-            <h3>Portfolio Website</h3>
-            <p>A personal website showcasing my work, blog, and resume.</p>
-            <span>Tech Stack: React, Next.js, TailwindCSS</span>
+            <h3>SISTN Website</h3>
+            <p>Website for a nongovernmental organisation registered in Nigeria by the Corporate Affairs Commission (CAC) with a broad mandate to cater for the professional interests of information professionals and allied disciplines in Nigeria.</p>
+            <span><b>Tech Stack:</b> React, TailwindCSS, PHP, MySQL, Hostinger</span>
             <div style={{display: 'flex', gap: '1rem', marginTop: "10px"}}>
-              <Button 
-                body={<a href=''>
-                  <FaLink />
-                </a>}
-              />
-              <Button 
-                body={<a href=''>
-                  <FaGithub color='black'/>
-                </a>}
-              />
+              <Link target='_blank' href='https://www.sistn.org'>
+                <Button 
+                  body={<FaLink />}
+                />
+              </Link>
+
+              <Link target='_blank' href='https://github.com/JAILBREAK-101/SISTN_web'>
+                <Button 
+                  body={<FaGithub color='white'/>}
+                  />
+              </Link>
             </div>
           </div>
           <div className={styles.projectCard}>
-            <h3>Subtilo</h3>
-            <p>Tool for generating and customizing subtitles for videos.</p>
-            <span>Tech Stack: React, Flask, PostgreSQL, GCPAI</span>
+            <h3>Subtilo: <small><i>In Development</i></small></h3>
+            <p>An AI-Powered application that creates accurate, multi-language subtitles online or offline in seconds, no extra tools needed.</p>
+            <span><b>Tech Stack:</b> React, TailwindCSS, Firebase Authentication, Flask</span>
             <div style={{display: 'flex', gap: '1rem', marginTop: "10px"}}>
-              <Button 
+              {/* <Button 
                 body={<a href=''>
                   <FaLink />
                 </a>}
-              />
-              <Button 
-                body={<a href=''>
-                  <FaGithub color='black'/>
-                </a>}
-              />
+              /> */}
+              <Link target='_blank' href='https://github.com/JAILBREAK-101/Subtilo_Frontend'>
+                <Button 
+                  body={<FaGithub color='white'/>}
+                />
+              </Link>
             </div>
           </div>
           {/* Add more project cards as needed */}
-        </div>
-      </div>
-
-      {/* Certifications */}
-      <div className={styles.certifications}>
-        <h2>Certifications</h2>
-        <div className={styles.certificationList}>
-          <div className={styles.certificationCard}>
-            <MdSchool className={styles.certificationIcon} />
-            <p>Full-Stack Web Development - XYZ Academy</p>
-          </div>
-          <div className={styles.certificationCard}>
-            <MdSchool className={styles.certificationIcon} />
-            <p>Python Programming - ABC Institute</p>
-          </div>
-          {/* Add more certifications as needed */}
         </div>
       </div>
 

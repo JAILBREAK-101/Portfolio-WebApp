@@ -6,6 +6,8 @@
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
+  min-height: 100%;
+  padding: 12px;
 }
 
 .card:hover {
@@ -27,11 +29,11 @@
 .title {
   font-size: 1.75rem;
   font-weight: bold;
-  color: #4A4A4A; /* Change as needed */
+  color: whitesmoke; /* Change as needed */
 }
 
 .description {
-  color: #5A5A5A; /* Change as needed */
+  color: whitesmoke; /* Change as needed */
   margin-bottom: 1rem;
 }
 
@@ -70,4 +72,15 @@
   color: white;
   margin: 0 5px;
   text-decoration: underline;
+}
+
+.techStack {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tech > * {
+  font-size: 32px;
 }

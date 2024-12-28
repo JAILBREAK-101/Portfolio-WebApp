@@ -1,14 +1,15 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../../styles/pages.module/Dashboard/ProjectDetails.module.css";
-import { projectData } from ".";
+import { projectData } from "./index";
 import { Button } from "../form/Button/Button";
+import Image from "next/image";
 
 export default function ProjectDetail() {
   const router = useRouter();
   const { id } = router.query;
 
-  const project = projectData.find((proj) => proj.id === id);
+  const project = projectData.find((proj) => proj.name === id);
 
   if (!project) {
     return (
@@ -23,9 +24,8 @@ export default function ProjectDetail() {
 
   return (
     <div className={styles.projectDetail}>
-      <h1>{project.name}</h1>
-      
-      <p>{project.description}</p>
+      <h1 className={styles.projectName}>{project.name}</h1>
+      <p className={styles.description}>{project.description}</p>
 
       <div className={styles.problemStatement}>
         <h3>Problem Statement:</h3>
@@ -35,23 +35,30 @@ export default function ProjectDetail() {
       <div className={styles.screenshots}>
         <h3>Screenshots:</h3>
         <div className={styles.screenshotContainer}>
-          {project.screenshots.map((screenshot, index) => (
-            <img key={index} src={screenshot} alt={`Screenshot ${index + 1}`} className={styles.screenshot} />
-          ))}
+          {project.screenshots.length > 0 ? (
+            project.screenshots.map((screenshot, index) => (
+              <Image key={index} src={screenshot} alt={`Screenshot ${index + 1}`} className={styles.screenshot} />
+            ))
+          ) : (
+            <img src="https://via.placeholder.com/300x200?text=No+Screenshot+Available" alt="Placeholder screenshot" className={styles.screenshotPlaceholder} />
+          )}
         </div>
       </div>
 
       <div className={styles.gitHubHistory}>
         <h3>GitHub History:</h3>
         <ul>
-          {/* Fetch from API */}
-          {/* {project.gitHubHistory.map((entry, index) => (
-            <li key={index}>
-              <a href={entry.link} target="_blank" rel="noopener noreferrer">
-                {entry.message} - {entry.date}
+          {project.gitHubHistory?.date ? (
+            // project.((entry: any, index: number) => (
+              <li key={project.id}>
+              <a href={project.gitHubHistory.link} target="_blank" rel="noopener noreferrer">
+                {project.gitHubHistory.message} - {project.gitHubHistory.date}
               </a>
             </li>
-          ))} */}
+            // ))
+          ) : (
+            <p>No GitHub history available.</p>
+          )}
         </ul>
       </div>
 
@@ -71,19 +78,28 @@ export default function ProjectDetail() {
 
       <div className={styles.links}>
         <h3>Links:</h3>
-        <a href={project.githublink} target="_blank" rel="noopener noreferrer">
-          GitHub Repo
-        </a>
-        <a href={project.livelink} target="_blank" rel="noopener noreferrer">
-          Live Demo
-        </a>
+        {project.githublink && (
+            <a href={project.githublink} target="_blank" rel="noopener noreferrer">
+              GitHub Repo
+            </a>
+          )
+        }
+
+        {project.livelink && (
+          <a href={project.livelink} target="_blank" rel="noopener noreferrer">
+            Live Demo
+          </a>
+        )
+      }
       </div>
 
-      <Link className={styles.button} href="/dashboard/projects">
-        <Button
-          body={"Back to projects"}
-        />
-      </Link>
+      <div className={styles.action}>
+        <Link className={styles.button} href="/dashboard/projects">
+          <Button
+            body={"Back to projects"}
+            />
+        </Link>
+      </div>
     </div>
   );
 }

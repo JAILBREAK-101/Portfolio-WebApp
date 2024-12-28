@@ -4,30 +4,43 @@
   max-width: 800px;
   color: white;
   margin: auto;
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.problemStatement {
-  margin-top: 20px;
+.projectName {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.screenshots {
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.problemStatement, .gitHubHistory, .phase, .techStack, .links, .screenshots {
   margin-top: 20px;
 }
 
 .screenshotContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Space between screenshots */
+  gap: 10px;
+  justify-content: center;
 }
 
-.screenshot {
+.screenshot,
+.screenshotPlaceholder {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-.gitHubHistory {
-  margin-top: 20px;
+  object-fit: cover;
+  background-color: #333;
+  border: 1px solid #444;
 }
 
 .gitHubHistory ul {
@@ -35,23 +48,39 @@
   padding: 0;
 }
 
-.techStack {
-  margin-top: 20px;
-}
-
 .techStack ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: circle;
+  padding: 0 20px;
 }
 
 .links a {
-  display: block;
-  margin-top: 10px;
+  display: inline-block;
+  margin-top: 5px;
+  color: #61dafb;
+  text-decoration: none;
 }
 
-.button {
+.links a:hover {
+  text-decoration: underline;
+}
+
+.action {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.notFound {
+  text-align: center;
+  padding: 50px;
+}
+
+.backButton {
   margin-top: 20px;
   padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 

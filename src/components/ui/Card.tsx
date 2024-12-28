@@ -1,6 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from '../../styles/component.module/Card.module.css';
+import { IconType } from 'react-icons';
+import Image, { StaticImageData } from 'next/image';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 interface ProjectLink {
   url: string;
@@ -8,14 +11,14 @@ interface ProjectLink {
 }
 
 interface CardProps {
-  image: string;
+  image: StaticImport;
   title: string;
   description: string;
   link: string;
   isProjectCard?: boolean; 
   projectLinks?: ProjectLink[]; 
   techstack?: string[]; 
-  techIcons?: { [key: string]: string };
+  techIcons?: { [key: string]: IconType };
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -31,7 +34,7 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div className={styles.card}>
       <div className="relative">
-        <img src={image} alt={title} className={styles.image} />
+        <Image src={image} alt={title} className={styles.image} />
         {isProjectCard && projectLinks.length > 0 && (
           <div className={styles.projectOverlay}>
             {projectLinks.map((projectLink, index) => (
@@ -51,13 +54,11 @@ export const Card: React.FC<CardProps> = ({
         {/* Tech Stacks*/}
         {isProjectCard && techstack.length > 0 && (
           <div className={styles.techStack}>
-            {techstack.map((tech) => (
-              <img
-                key={tech}
-                src={techIcons[tech]}
-                alt={tech}
-                className={styles.techIcon}
-              />
+           {techstack.map((tech) => (
+              <div key={tech} className={styles.tech}>
+                {/* Render the icon component directly */}
+                {techIcons[tech] && React.createElement(techIcons[tech])}
+              </div>
             ))}
           </div>
         )}

@@ -1,5 +1,10 @@
+.projectsContainer {
+  background-color: #f4f4f4;
+  padding: 40px;
+  color: #333;
+}
+
 .projectsHeader {
-  color: white;
   text-align: center;
 }
 
