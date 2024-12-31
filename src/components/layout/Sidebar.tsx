@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styles from '../../styles/layout.module/Sidebar.module.css';
 import { FaHouseChimneyUser, FaCertificate, FaCode, FaLaptopCode, FaYoutube, FaGithub } from 'react-icons/fa6';
-import { Button } from '../form/Button/Button';
 
 export default function Sidebar() {
   return (
@@ -14,9 +13,9 @@ export default function Sidebar() {
           </Link>
         </li>
         <li>
-          <Link className='next-link' title='Products' href="/dashboard/projects">
+          <Link className='next-link' title='Solutions' href="/dashboard/solutions">
             <span className={styles.icon}><FaCode /></span>
-            <span className={styles.label}>Products</span>
+            <span className={styles.label}>Solutions</span>
           </Link>
         </li>
         <li>

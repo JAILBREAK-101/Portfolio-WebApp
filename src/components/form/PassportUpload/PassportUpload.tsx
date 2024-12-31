@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { PassportUploadProps } from "./PassportUpload.types";
 import styles from "./PassportUpload.module.css";
+import Image from "next/image";
 
 export const PassportUpload: React.FC<PassportUploadProps> = ({
   label,
@@ -106,7 +107,7 @@ export const PassportUpload: React.FC<PassportUploadProps> = ({
       {/* Preview the uploaded file if available */}
       {filePreview && (
         <div className={styles.previewContainer}>
-          <img src={filePreview} alt="Preview" className={styles.previewImage} />
+          <Image src={filePreview} alt="Preview" className={styles.previewImage} />
           <button
             type="button"
             onClick={handleRemoveFile}
