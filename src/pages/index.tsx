@@ -3,9 +3,8 @@ import Image from 'next/image';
 import GTS from "@/assets/images/GTS.png";
 import styles from '../styles/pages.module/Home/Home.module.css';
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaPerson, FaTwitter, FaYoutube } from 'react-icons/fa6';
 import { Button } from "../components/form/Button/Button";
-import Footer from '@/components/layout/Footer';
 
 export default function Home() {
   return (
@@ -17,7 +16,8 @@ export default function Home() {
           transition={{ duration: 0.8 }}
         >
           <h1 className={styles.title}>GenixTech Solutions</h1>
-          <p className={styles.subheading}>Software Engineering || Systems Design || Graphic & UIUX Design || YouTube</p>
+          <p className={styles.subheading}><Link href={'/dashboard/services'} >Multidisciplinary</Link> Tech Agency with over 2 years expertise engineering solutions for small businesses and solopreneurs.</p>
+
           <blockquote className={styles.quote}>"Your Vision! Our Solution!"</blockquote>
           {/* <blockquote className={styles.quote}>"Curiosity fuels me to do more."</blockquote> */}
         </motion.div>
@@ -48,6 +48,7 @@ export default function Home() {
           <a href="https://linkedin.com/in/jailbreak" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="https://twitter.com/GenixTech1" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
           <a href="https://youtube.com/@Genix-Js" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+          <Link href="/about" target="_blank" rel="noopener noreferrer"><FaPerson /></Link>
         </motion.div>
 
         <div className={styles.buttonGroup}>
@@ -58,7 +59,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <Link href="/dashboard/projects">
-              <Button btnClass={`${styles.exploreButton}`} body={'Explore My Works'} />
+              <Button btnClass={`${styles.exploreButton}`} body={'Solutions'} />
             </Link>
           </motion.div>
           
@@ -69,19 +70,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <Link href="/dashboard/services">
-              <Button btnClass={`${styles.secondaryButton}`} body={"Let's build for you"} />
-            </Link>
-          </motion.div>
-        </div>
-
-        <div className={`${styles.buttonBelow}`}>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
-          >
-            <Link href="/about">
-              <Button btnClass={`${styles.secondaryButton__outline}`} body={"Know my journey"} />
+              <Button btnClass={`${styles.secondaryButton}`} body={"Work with us"} />
             </Link>
           </motion.div>
         </div>

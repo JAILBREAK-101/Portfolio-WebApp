@@ -1,8 +1,8 @@
 import '../styles/globals.css';
-import Loader from "../components/ui/Loader";
+// import Loader from "../components/ui/Loader";
 import { AppProps } from 'next/app';
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+// import { Analytics } from "@vercel/analytics/react"
+// import { SpeedInsights } from "@vercel/speed-insights/next"
 // import { Roboto } from "next/font/google";
 
 // const roboto = Roboto({
@@ -15,8 +15,8 @@ export default function App({ Component, pageProps }: AppProps) {
     // <main className={roboto.className}>
       <>
         <Component {...pageProps} />;
-        <Analytics />
-        <SpeedInsights />
+        {/* <Analytics /> */}
+        {/* <SpeedInsights /> */}
         {/* <Loader /> */}
       </>
     // </main>
